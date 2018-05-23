@@ -1,0 +1,4 @@
+./fftw3/lib/libfftw3f.a(mapflags.o): In function `fftwf_mapflags':
+mapflags.c:(.text+0x321): undefined reference to `__log_finite'
+collect2: error: ld returned 1 exit status
+make: *** [run/multi_thread] Error 1

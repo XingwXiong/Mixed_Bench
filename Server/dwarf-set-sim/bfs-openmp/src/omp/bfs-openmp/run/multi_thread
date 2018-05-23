@@ -1,0 +1,39 @@
+#!/bin/bash
+
+graph500=../graph500-2.1.4
+
+if [ ! -x ${graph500}/omp-csr/omp-csr ]; then
+  echo "omp-csr: not exist or executable"
+  exit -1
+fi
+if [ $# != 4 ]; then
+  echo "Usage: ""$0 scale edgefactor input_file thread_cnt"
+  echo "  number of vertices: 2^scale"
+  echo "  edgefactor = ceil( number_of_edges/number_of_vertices )"
+  exit -1
+fi
+g_scale=$1
+g_efactor=$2
+g_dumpfile=$3
+g_thread_cnt=$4
+
+run_one() {
+  scale=$1
+  efactor=$2
+  dumpfile=$3
+  thread_cnt=$4
+  #./make-edgelist -s 10 -e 3 -V -o make-edgelist.dump
+  #./omp-csr/omp-csr -s 10 -e 3 -V -o make-edgelist.dump
+  ${graph500}/omp-csr/omp-csr -n ${thread_cnt} -s ${scale} -e ${efactor} -V -o ${dumpfile} #1>run.1.txt.${scale}.my_dump.m 2>run.2.txt.${scale}.my_dump.m
+  #${graph500}/seq-csr/seq-csr -n ${thread_cnt} -s ${scale} -e ${efactor} -V -o ${dumpfile} #1>run.1.txt.${scale}.my_dump.s 2>run.2.txt.${scale}.my_dump.s
+}
+
+run_one ${g_scale} ${g_efactor} ${g_dumpfile} ${g_thread_cnt}
+#run_one 10 3 ../dataset/g.10_2640.dump 3
+#run_one 16 5 ../dataset/g.16_297651.dump 3
+#run_one 20 7 ../dataset/g.20_6952392.dump 3
+#run_one 21 8 ../dataset/g.21_15284140.dump 3
+#run_one 22 9 ../dataset/g.22_33600654.dump 3
+#run_one 24 10 ../dataset/g.24_162390705.dump 3
+
+

@@ -1,0 +1,36 @@
+# Directed graph: graph.txt 
+# Kronecker Graph: seed matrix [0.9 0.5; 0.5 0.1]
+# Each Number representatives a Node
+# FromNodeId	ToNodeId
+1	13
+13	2
+21	0
+0	13
+24	4
+17	1
+9	10
+7	25
+18	9
+1	8
+1	0
+22	0
+1	10
+4	8
+8	1
+11	2
+8	16
+4	6
+12	2
+18	22
+5	2
+0	0
+5	0
+9	7
+4	26
+19	4
+0	18
+14	0
+8	4
+8	5
+8	4
+6	3

@@ -1,0 +1,2 @@
+fft-10000G running time: 1 seconds
+fft-10000G running time: 64 seconds

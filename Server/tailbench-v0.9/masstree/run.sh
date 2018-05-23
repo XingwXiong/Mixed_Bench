@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [[ -z "${NTHREADS}" ]]; then NTHREADS=1; fi
+
+QPS=100
+MAXREQS=300
+WARMUPREQS=1400
+TBENCH_RANDSEED=${RANDOM} TBENCH_QPS=${QPS} TBENCH_MAXREQS=${MAXREQS} TBENCH_WARMUPREQS=${WARMUPREQS} \
+    TBENCH_MINSLEEPNS=100 chrt -r 99 ./mttest_integrated -j${NTHREADS} \
+    mycsba masstree
+

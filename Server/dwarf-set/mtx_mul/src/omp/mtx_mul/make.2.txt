@@ -1,0 +1,2 @@
+make: gcc: Command not found
+make: *** [do_one_file_m.o] Error 127

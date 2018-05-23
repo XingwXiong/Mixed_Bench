@@ -1,0 +1,64 @@
+CC = gcc
+
+# no my_template obj needed.
+objs_my_template_arr = 
+
+
+multi_thread = ./run/multi_thread
+CFlags_m = -lrt -fopenmp -D_REENTRANT -Wall -pedantic -lfftw3f -lfftw3f_omp -msse -msse2 -lm #-std=c99
+objs_m = do_one_file_m.o fft_m.o main_m.o my_seq_ops_m.o $(objs_my_template_arr)
+Include_m = -I./ -I../../my_template_arr/ -I ./fftw3/include/ -L ./fftw3/lib
+
+$(multi_thread) : $(objs_m)
+	$(CC) -o $(multi_thread) $(objs_m) $(CFlags_m) $(Include_m)
+
+#multi-thread
+do_one_file_m.o: do_one_file.c my_seq_ops.h fft.h do_one_file.h
+	$(CC) -c -static do_one_file.c $(CFlags_m) $(Include_m) -o do_one_file_m.o
+fft_m.o: fft.c my_seq_ops.h fft.h
+	$(CC) -c -static fft.c $(CFlags_m) $(Include_m) -o fft_m.o
+main_m.o: main.c my_seq_ops.h do_one_file.h fft.h
+	$(CC) -c -static main.c $(CFlags_m) $(Include_m) -o main_m.o
+my_seq_ops_m.o: my_seq_ops.c my_seq_ops.h
+	$(CC) -c -static my_seq_ops.c $(CFlags_m) $(Include_m) -o my_seq_ops_m.o
+my_single_omp_m.o: my_single_omp.c my_single_omp.h
+	$(CC) -c -static my_single_omp.c $(CFlags_m) $(Include_m) -o my_single_omp_m.o
+
+
+single_thread = ./run/single_thread
+CFlags_s = -lrt -g -Wall -pedantic -DDEBUG_TEST -lfftw3f -lm #-std=c99
+objs_s = do_one_file_s.o fft_s.o main_s.o my_seq_ops_s.o my_single_omp_s.o $(objs_my_template_arr)
+Include_s = -I./ -I../../my_template_arr/ -I./fftw3/include/ -L ./fftw3/lib
+
+$(single_thread) : $(objs_s)
+	$(CC) -o $(single_thread) $(objs_s) $(CFlags_s) $(Include_s)
+
+
+#single-thread
+do_one_file_s.o: do_one_file.c my_single_omp.h my_seq_ops.h fft.h \
+ do_one_file.h
+	$(CC) -c -static do_one_file.c $(CFlags_s) $(Include_s) -o do_one_file_s.o
+fft_s.o: fft.c my_single_omp.h my_seq_ops.h fft.h
+	$(CC) -c -static fft.c $(CFlags_s) $(Include_s) -o fft_s.o
+main_s.o: main.c my_single_omp.h my_seq_ops.h do_one_file.h fft.h
+	$(CC) -c -static main.c $(CFlags_s) $(Include_s) -o main_s.o
+my_seq_ops_s.o: my_seq_ops.c my_seq_ops.h
+	$(CC) -c -static my_seq_ops.c $(CFlags_s) $(Include_s) -o my_seq_ops_s.o
+my_single_omp_s.o: my_single_omp.c my_single_omp.h
+	$(CC) -c -static my_single_omp.c $(CFlags_s) $(Include_s) -o my_single_omp_s.o
+
+
+.PHONY : all
+all: $(multi_thread) $(single_thread)
+
+.PHONY : m_th
+m_th: $(multi_thread)
+
+.PHONY : s_th
+s_th: $(single_thread)
+
+.PHONY : clean
+clean:
+	rm -rf *.o
+
+

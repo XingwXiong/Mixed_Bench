@@ -1,0 +1,13 @@
+
+	ffd<<rand()<<endl;
+   ffd.open("ha.txt");
+   for(int i=0;i<1000000;i++)
+   ofstream ffd;
+   {
+   }
+#include<cstdlib>
+#include<fstream>
+int main()
+using namespace std;
+{
+}

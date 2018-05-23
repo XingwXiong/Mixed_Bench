@@ -1,0 +1,25 @@
+#001#2015-11-09# bugs
+1. in ReadMe.txt, line 46 and 48: exchange unweight and weight;
+2. write some bash script files in BDGS:
+    Graph_datagen/gen_unweighted_and_split.sh
+    Graph_datagen/split.sh
+##
+
+
+
+
+#002#2015-12-11# numbers of vertices and edges in graph;
+input -i:NIter
+input -m:"A B; C D"
+MtxSum = A + B + C + D;
+MtxDim = 2; // dimension of matrix;
+number of vetex: NNodes = pow(double(MtxDim), double(NIter));
+number of edge: NEdges = pow(double(MtxSum), double(NIter));
+
+most of time, MtxDim=2, and 2<MtxSum<3;
+##
+
+
+
+
+

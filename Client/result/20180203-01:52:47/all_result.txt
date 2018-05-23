@@ -1,0 +1,106 @@
+compute application throughput_rate:1.00000
+xapian
+--------------------------
+len 3000
+user_p_num 0 th latency 0.601 ms | avg latency 2.048 ms | throughput rate : 0.488
+len 3000
+user_p_num 80 th latency 3.055 ms | avg latency 2.048 ms | throughput rate : 0.488
+len 3000
+user_p_num 90 th latency 3.949 ms | avg latency 2.048 ms | throughput rate : 0.488
+len 3000
+user_p_num 95 th latency 4.618 ms | avg latency 2.048 ms | throughput rate : 0.488
+len 3000
+user_p_num 100 th latency 10.669 ms | avg latency 2.048 ms | throughput rate : 0.488
+
+redis
+--------------------------
+==============Parameters==============
+WARMUP:		2000
+QPS:		2000
+REQUESTS:	10000
+THREADS:	50
+HOST:		127.0.0.1
+PORT:		8000
+
+==============TYPE: SET==============
+  10000 requests completed in 6.90 seconds
+0.01% <= 1 milliseconds
+14.45% <= 2 milliseconds
+28.92% <= 3 milliseconds
+43.32% <= 4 milliseconds
+57.98% <= 5 milliseconds
+72.76% <= 6 milliseconds
+87.34% <= 7 milliseconds
+1449.28 requests per second
+
+==============Parameters==============
+WARMUP:		2000
+QPS:		2000
+REQUESTS:	10000
+THREADS:	50
+HOST:		127.0.0.1
+PORT:		8000
+
+==============TYPE: GET==============
+  10000 requests completed in 6.91 seconds
+0.01% <= 1 milliseconds
+14.97% <= 2 milliseconds
+29.44% <= 3 milliseconds
+43.84% <= 4 milliseconds
+58.58% <= 5 milliseconds
+73.16% <= 6 milliseconds
+87.33% <= 7 milliseconds
+1446.97 requests per second
+
+
+redis
+--------------------------
+==============Parameters==============
+WARMUP:		2000
+QPS:		2000
+REQUESTS:	10000
+THREADS:	50
+HOST:		127.0.0.1
+PORT:		8000
+
+==============TYPE: SET==============
+  10000 requests completed in 6.90 seconds
+0.01% <= 1 milliseconds
+14.76% <= 2 milliseconds
+29.62% <= 3 milliseconds
+44.06% <= 4 milliseconds
+58.55% <= 5 milliseconds
+73.12% <= 6 milliseconds
+87.52% <= 7 milliseconds
+1450.12 requests per second
+
+==============Parameters==============
+WARMUP:		2000
+QPS:		2000
+REQUESTS:	10000
+THREADS:	50
+HOST:		127.0.0.1
+PORT:		8000
+
+==============TYPE: GET==============
+  10000 requests completed in 6.93 seconds
+0.01% <= 1 milliseconds
+14.40% <= 2 milliseconds
+28.86% <= 3 milliseconds
+43.44% <= 4 milliseconds
+58.33% <= 5 milliseconds
+72.79% <= 6 milliseconds
+87.06% <= 7 milliseconds
+1443.21 requests per second
+
+
+sort
+--------------------------
+time: 2
+clock: parallel part:  total of threads:1.347371  wall time:0.729973
+
+wordcount
+--------------------------
+time: 3
+clock: parallel part:  total of threads:0.622759  wall time:0.619869
+
