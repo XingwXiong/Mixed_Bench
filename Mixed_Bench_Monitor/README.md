@@ -13,7 +13,7 @@ Web-Server
 docker 
 1. yum -y install docker-io
 2. cd ../Server/docker
-3. docker built -t xingw/centos:v1 .
+3. docker build -t xingw/centos:v1 .
 
 ## 在线监控平台的大致功能如下（部分功能还未完成）：
 

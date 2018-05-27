@@ -72,7 +72,8 @@ def set_sys_dynamic_info():
     global conn
     dynamic_info = get_sys_dynamic_info()
     conn.lpush(IP_ADDR + "_dynamic",dynamic_info)
-
+    if conn.llen(IP_ADDR + "_dynamic") > 2000:
+        conn.rpop(IP_ADDR + "_dynamic")
 
 def is_real_number(x):
     try:
@@ -86,7 +87,7 @@ def usage():
     print("Usage: ./system_tz.py [options]")
     print("Options are");
     print("\t-i(--ip) <hostname>    Server hostname (default 127.0.0.1)")
-    print("\t-h(--host)             Display usage information(this message)")
+    print("\t-h(--help)             Display usage information(this message)")
 
 if __name__=='__main__':
     net_addrs = psutil.net_if_addrs()
@@ -96,15 +97,16 @@ if __name__=='__main__':
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hi:", ["help", "ip"])
         for opt, arg in opts:
-            if opt == '-h':
+            if opt in ('-h', '--help'):
                 usage()
                 sys.exit()
-            elif opt in('-i', '--ip'):
+            elif opt in ('-i', '--ip'):
                 IP_ADDR = arg
     except getopt.GetoptError:
         usage()
         sys.exit(2)
-
+    
+    conn.sadd('ip_addrs', IP_ADDR)
     print("IP_ADDR: %s" % IP_ADDR)
     #sys.exit()
     set_sys_static_info()

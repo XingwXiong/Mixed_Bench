@@ -3,7 +3,7 @@ FROM centos
 MAINTAINER "Xingwang Xiong" "xingw.xiong@gmail.com"
 
 #yum install -y epel-release python python-pip gcc redis openssh-server python-devel \
-RUN yum install -y epel-release python gcc redis openssh-server python-devel net-tools\ 
+RUN yum install -y epel-release python gcc redis openssh-server python-devel net-tools \ 
     && yum install -y python-pip \
     && yum clean all \
     && pip install --upgrade pip \
@@ -15,7 +15,7 @@ RUN yum install -y epel-release python gcc redis openssh-server python-devel net
 # please ensure you have run `cp ~/.ssh/id_rsa.pub authorized_keys`
 COPY authorized_keys /root/.ssh/authorized_keys
 
-COPY system_tz.py /root
+COPY system_tz.py /root/
 
 EXPOSE 22
 
