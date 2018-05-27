@@ -2,14 +2,18 @@
 
 ## 依赖情况：
 
+Web-Server
 1. `python` + `django` + `numpy` + `scipy`
     - yum install -y python
     - pip install django numpy scipy
 2. `redis` + `python redis`
     - yum install -y redis
     - pip install redis
-3. `psutil`
-    - pip install psutil
+
+docker 
+1. yum -y install docker-io
+2. cd ../Server/docker
+3. docker built -t xingw/centos:v1 .
 
 ## 在线监控平台的大致功能如下（部分功能还未完成）：
 

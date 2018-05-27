@@ -3,7 +3,7 @@ FROM centos
 MAINTAINER "Xingwang Xiong" "xingw.xiong@gmail.com"
 
 #yum install -y epel-release python python-pip gcc redis openssh-server python-devel \
-RUN yum install -y epel-release python gcc redis openssh-server python-devel \ 
+RUN yum install -y epel-release python gcc redis openssh-server python-devel net-tools\ 
     && yum install -y python-pip \
     && yum clean all \
     && pip install --upgrade pip \

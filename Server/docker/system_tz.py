@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 import psutil
 import redis
@@ -12,7 +12,8 @@ REDIS_HOST = "172.17.0.1"
 REDIS_PORT = 6379
 PASSWORD   = "xingwxingw"
 # 本地IP
-IP_ADDR = "172.17.0.2"
+NET_NAME_LIST=("eth0", "docker0", )
+# IP_ADDR = psutil.net_if_addrs()['eth0'][0].address if psutil.net_if_addrs()['eth0'] else "172.17.0.2"
 bytes_recv = 0
 bytes_sent = 0
 timestamp  = 0
@@ -88,6 +89,10 @@ def usage():
     print("\t-h(--host)             Display usage information(this message)")
 
 if __name__=='__main__':
+    net_addrs = psutil.net_if_addrs()
+    for net_name in NET_NAME_LIST:
+        if net_name in net_addrs.keys():
+            IP_ADDR = net_addrs[net_name][0].address
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hi:", ["help", "ip"])
         for opt, arg in opts:
