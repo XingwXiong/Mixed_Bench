@@ -97,7 +97,7 @@
 #define HAVE_STD_IS_RVALUE_REFERENCE 1
 
 /* Define if you have the std::is_trivially_copyable template. */
-/* #undef HAVE_STD_IS_TRIVIALLY_COPYABLE */
+#define HAVE_STD_IS_TRIVIALLY_COPYABLE 1
 
 /* Define to 1 if you have the <strings.h> header file. */
 #define HAVE_STRINGS_H 1
@@ -230,6 +230,9 @@
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "masstree-beta"
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.1"

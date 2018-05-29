@@ -1,5 +1,6 @@
-misc.o: misc.cc config.h kvio.hh misc.hh compiler.hh \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h \
+misc.o: misc.cc /usr/include/stdc-predef.h config.h kvio.hh misc.hh \
+ compiler.hh \
+ /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h \
  /usr/include/stdint.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
@@ -8,160 +9,142 @@ misc.o: misc.cc config.h kvio.hh misc.hh compiler.hh \
  /usr/include/sys/uio.h /usr/include/sys/types.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/time.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h \
+ /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/bits/byteswap.h /usr/include/sys/select.h \
- /usr/include/bits/select.h /usr/include/bits/sigset.h \
- /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
- /usr/include/bits/pthreadtypes.h /usr/include/bits/uio.h \
- /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/uio.h /usr/include/bits/socket.h \
+ /usr/include/bits/socket_type.h /usr/include/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
- /usr/include/bits/in.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/type_traits \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++config.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/os_defines.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/cpu_defines.h \
+ /usr/include/bits/in.h /usr/local/include/c++/5.4.0/type_traits \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
  shared_config.hh str.hh string_base.hh hashcode.hh /usr/include/assert.h \
  /usr/include/string.h /usr/include/xlocale.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h \
+ /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed/limits.h \
+ /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
  /usr/include/bits/stdio_lim.h /usr/include/ctype.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/iostream \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ostream \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ios \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/iosfwd \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stringfwd.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/memoryfwd.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/postypes.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cwchar \
- /usr/include/wchar.h /usr/include/stdio.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/exception \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/atomic_lockfree_defines.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/exception_ptr.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/exception_defines.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/nested_exception.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/char_traits.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_algobase.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/functexcept.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/cpp_type_traits.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/type_traits.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/numeric_traits.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_pair.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/move.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/concept_check.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_iterator_base_funcs.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/debug/debug.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_iterator.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cstdint \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/localefwd.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++locale.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/clocale \
- /usr/include/locale.h /usr/include/bits/locale.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cctype \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ios_base.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/atomicity.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr-default.h \
+ /usr/local/include/c++/5.4.0/iostream \
+ /usr/local/include/c++/5.4.0/ostream /usr/local/include/c++/5.4.0/ios \
+ /usr/local/include/c++/5.4.0/iosfwd \
+ /usr/local/include/c++/5.4.0/bits/stringfwd.h \
+ /usr/local/include/c++/5.4.0/bits/memoryfwd.h \
+ /usr/local/include/c++/5.4.0/bits/postypes.h \
+ /usr/local/include/c++/5.4.0/cwchar /usr/include/wchar.h \
+ /usr/include/stdio.h \
+ /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h \
+ /usr/local/include/c++/5.4.0/exception \
+ /usr/local/include/c++/5.4.0/bits/atomic_lockfree_defines.h \
+ /usr/local/include/c++/5.4.0/bits/exception_ptr.h \
+ /usr/local/include/c++/5.4.0/bits/exception_defines.h \
+ /usr/local/include/c++/5.4.0/bits/nested_exception.h \
+ /usr/local/include/c++/5.4.0/bits/char_traits.h \
+ /usr/local/include/c++/5.4.0/bits/stl_algobase.h \
+ /usr/local/include/c++/5.4.0/bits/functexcept.h \
+ /usr/local/include/c++/5.4.0/bits/cpp_type_traits.h \
+ /usr/local/include/c++/5.4.0/ext/type_traits.h \
+ /usr/local/include/c++/5.4.0/ext/numeric_traits.h \
+ /usr/local/include/c++/5.4.0/bits/stl_pair.h \
+ /usr/local/include/c++/5.4.0/bits/move.h \
+ /usr/local/include/c++/5.4.0/bits/concept_check.h \
+ /usr/local/include/c++/5.4.0/bits/stl_iterator_base_types.h \
+ /usr/local/include/c++/5.4.0/bits/stl_iterator_base_funcs.h \
+ /usr/local/include/c++/5.4.0/debug/debug.h \
+ /usr/local/include/c++/5.4.0/bits/stl_iterator.h \
+ /usr/local/include/c++/5.4.0/bits/ptr_traits.h \
+ /usr/local/include/c++/5.4.0/bits/predefined_ops.h \
+ /usr/local/include/c++/5.4.0/cstdint \
+ /usr/local/include/c++/5.4.0/bits/localefwd.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/include/c++/5.4.0/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/local/include/c++/5.4.0/cctype \
+ /usr/local/include/c++/5.4.0/bits/ios_base.h \
+ /usr/local/include/c++/5.4.0/ext/atomicity.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
  /usr/include/bits/timex.h /usr/include/bits/setjmp.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/atomic_word.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_classes.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/string \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/allocator.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/new_allocator.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/new \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ostream_insert.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/cxxabi_forced.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_function.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/backward/binders.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/range_access.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_string.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/initializer_list \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/string_conversions.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cstdlib \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/alloca.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cstdio \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/include/c++/5.4.0/bits/locale_classes.h \
+ /usr/local/include/c++/5.4.0/string \
+ /usr/local/include/c++/5.4.0/bits/allocator.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/include/c++/5.4.0/ext/new_allocator.h \
+ /usr/local/include/c++/5.4.0/new \
+ /usr/local/include/c++/5.4.0/bits/ostream_insert.h \
+ /usr/local/include/c++/5.4.0/bits/cxxabi_forced.h \
+ /usr/local/include/c++/5.4.0/bits/stl_function.h \
+ /usr/local/include/c++/5.4.0/backward/binders.h \
+ /usr/local/include/c++/5.4.0/bits/range_access.h \
+ /usr/local/include/c++/5.4.0/initializer_list \
+ /usr/local/include/c++/5.4.0/bits/basic_string.h \
+ /usr/local/include/c++/5.4.0/ext/alloc_traits.h \
+ /usr/local/include/c++/5.4.0/bits/alloc_traits.h \
+ /usr/local/include/c++/5.4.0/ext/string_conversions.h \
+ /usr/local/include/c++/5.4.0/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
+ /usr/include/bits/stdlib-float.h /usr/local/include/c++/5.4.0/cstdio \
  /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/functional_hash.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/hash_bytes.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_string.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_classes.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/streambuf \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/streambuf.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_ios.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_facets.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cwctype \
- /usr/include/wctype.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_base.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/streambuf_iterator.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_inline.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_facets.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_ios.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ostream.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/istream \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/istream.tcc \
- /usr/include/sys/time.h /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/local/include/c++/5.4.0/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h \
+ /usr/local/include/c++/5.4.0/bits/functional_hash.h \
+ /usr/local/include/c++/5.4.0/bits/hash_bytes.h \
+ /usr/local/include/c++/5.4.0/bits/basic_string.tcc \
+ /usr/local/include/c++/5.4.0/bits/locale_classes.tcc \
+ /usr/local/include/c++/5.4.0/system_error \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/error_constants.h \
+ /usr/local/include/c++/5.4.0/stdexcept \
+ /usr/local/include/c++/5.4.0/streambuf \
+ /usr/local/include/c++/5.4.0/bits/streambuf.tcc \
+ /usr/local/include/c++/5.4.0/bits/basic_ios.h \
+ /usr/local/include/c++/5.4.0/bits/locale_facets.h \
+ /usr/local/include/c++/5.4.0/cwctype /usr/include/wctype.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/include/c++/5.4.0/bits/streambuf_iterator.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/include/c++/5.4.0/bits/locale_facets.tcc \
+ /usr/local/include/c++/5.4.0/bits/basic_ios.tcc \
+ /usr/local/include/c++/5.4.0/bits/ostream.tcc \
+ /usr/local/include/c++/5.4.0/istream \
+ /usr/local/include/c++/5.4.0/bits/istream.tcc /usr/include/sys/time.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
  /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
  /usr/include/bits/inf.h /usr/include/bits/nan.h \
  /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
  /usr/include/bits/mathinline.h /usr/include/fcntl.h \
- /usr/include/bits/fcntl.h /usr/include/bits/stat.h /usr/include/unistd.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/bits/stat.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/getopt.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/algorithm \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/utility \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_relops.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_algo.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/algorithmfwd.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_heap.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_tempbuf.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_construct.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/alloc_traits.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/alloc_traits.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ptr_traits.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/random \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cmath \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/limits \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/random.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/vector \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_uninitialized.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_vector.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_bvector.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/vector.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/opt_random.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/x86intrin.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/ia32intrin.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/mmintrin.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/xmmintrin.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/mm_malloc.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/emmintrin.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/immintrin.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/fxsrintrin.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/adxintrin.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/random.tcc \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/numeric \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_numeric.h \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/typeinfo \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/tuple \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/array \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/stdexcept \
- /opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/uses_allocator.h \
- kvthread.hh kvdconfig.hh perfstat.hh circular_int.hh \
- /usr/include/sys/mman.h /usr/include/bits/mman.h clp.h
+ /usr/local/include/c++/5.4.0/algorithm \
+ /usr/local/include/c++/5.4.0/utility \
+ /usr/local/include/c++/5.4.0/bits/stl_relops.h \
+ /usr/local/include/c++/5.4.0/bits/stl_algo.h \
+ /usr/local/include/c++/5.4.0/bits/algorithmfwd.h \
+ /usr/local/include/c++/5.4.0/bits/stl_heap.h \
+ /usr/local/include/c++/5.4.0/bits/stl_tempbuf.h \
+ /usr/local/include/c++/5.4.0/bits/stl_construct.h \
+ /usr/local/include/c++/5.4.0/bits/uniform_int_dist.h \
+ /usr/local/include/c++/5.4.0/limits /usr/local/include/c++/5.4.0/vector \
+ /usr/local/include/c++/5.4.0/bits/stl_uninitialized.h \
+ /usr/local/include/c++/5.4.0/bits/stl_vector.h \
+ /usr/local/include/c++/5.4.0/bits/stl_bvector.h \
+ /usr/local/include/c++/5.4.0/bits/vector.tcc kvthread.hh kvdconfig.hh \
+ perfstat.hh circular_int.hh /usr/include/sys/mman.h \
+ /usr/include/bits/mman.h /usr/include/bits/mman-linux.h clp.h
+
+/usr/include/stdc-predef.h:
 
 config.h:
 
@@ -171,7 +154,7 @@ misc.hh:
 
 compiler.hh:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h:
+/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -205,13 +188,15 @@ compiler.hh:
 
 /usr/include/time.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h:
+/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h:
 
 /usr/include/endian.h:
 
 /usr/include/bits/endian.h:
 
 /usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
 
 /usr/include/sys/select.h:
 
@@ -229,6 +214,8 @@ compiler.hh:
 
 /usr/include/bits/socket.h:
 
+/usr/include/bits/socket_type.h:
+
 /usr/include/bits/sockaddr.h:
 
 /usr/include/asm/socket.h:
@@ -241,13 +228,13 @@ compiler.hh:
 
 /usr/include/bits/in.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/type_traits:
+/usr/local/include/c++/5.4.0/type_traits:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++config.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/os_defines.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/cpu_defines.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
 
 shared_config.hh:
 
@@ -263,9 +250,9 @@ hashcode.hh:
 
 /usr/include/xlocale.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h:
+/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed/limits.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h:
+/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -283,85 +270,89 @@ hashcode.hh:
 
 /usr/include/ctype.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/iostream:
+/usr/local/include/c++/5.4.0/iostream:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ostream:
+/usr/local/include/c++/5.4.0/ostream:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ios:
+/usr/local/include/c++/5.4.0/ios:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/iosfwd:
+/usr/local/include/c++/5.4.0/iosfwd:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stringfwd.h:
+/usr/local/include/c++/5.4.0/bits/stringfwd.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/memoryfwd.h:
+/usr/local/include/c++/5.4.0/bits/memoryfwd.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/postypes.h:
+/usr/local/include/c++/5.4.0/bits/postypes.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cwchar:
+/usr/local/include/c++/5.4.0/cwchar:
 
 /usr/include/wchar.h:
 
 /usr/include/stdio.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h:
+/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/exception:
+/usr/local/include/c++/5.4.0/exception:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/atomic_lockfree_defines.h:
+/usr/local/include/c++/5.4.0/bits/atomic_lockfree_defines.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/exception_ptr.h:
+/usr/local/include/c++/5.4.0/bits/exception_ptr.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/exception_defines.h:
+/usr/local/include/c++/5.4.0/bits/exception_defines.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/nested_exception.h:
+/usr/local/include/c++/5.4.0/bits/nested_exception.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/char_traits.h:
+/usr/local/include/c++/5.4.0/bits/char_traits.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_algobase.h:
+/usr/local/include/c++/5.4.0/bits/stl_algobase.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/functexcept.h:
+/usr/local/include/c++/5.4.0/bits/functexcept.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/cpp_type_traits.h:
+/usr/local/include/c++/5.4.0/bits/cpp_type_traits.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/type_traits.h:
+/usr/local/include/c++/5.4.0/ext/type_traits.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/numeric_traits.h:
+/usr/local/include/c++/5.4.0/ext/numeric_traits.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_pair.h:
+/usr/local/include/c++/5.4.0/bits/stl_pair.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/move.h:
+/usr/local/include/c++/5.4.0/bits/move.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/concept_check.h:
+/usr/local/include/c++/5.4.0/bits/concept_check.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_iterator_base_types.h:
+/usr/local/include/c++/5.4.0/bits/stl_iterator_base_types.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_iterator_base_funcs.h:
+/usr/local/include/c++/5.4.0/bits/stl_iterator_base_funcs.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/debug/debug.h:
+/usr/local/include/c++/5.4.0/debug/debug.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_iterator.h:
+/usr/local/include/c++/5.4.0/bits/stl_iterator.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cstdint:
+/usr/local/include/c++/5.4.0/bits/ptr_traits.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/localefwd.h:
+/usr/local/include/c++/5.4.0/bits/predefined_ops.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++locale.h:
+/usr/local/include/c++/5.4.0/cstdint:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/clocale:
+/usr/local/include/c++/5.4.0/bits/localefwd.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++locale.h:
+
+/usr/local/include/c++/5.4.0/clocale:
 
 /usr/include/locale.h:
 
 /usr/include/bits/locale.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cctype:
+/usr/local/include/c++/5.4.0/cctype:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ios_base.h:
+/usr/local/include/c++/5.4.0/bits/ios_base.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/atomicity.h:
+/usr/local/include/c++/5.4.0/ext/atomicity.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/gthr-default.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr-default.h:
 
 /usr/include/pthread.h:
 
@@ -373,37 +364,41 @@ hashcode.hh:
 
 /usr/include/bits/setjmp.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/atomic_word.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/atomic_word.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_classes.h:
+/usr/local/include/c++/5.4.0/bits/locale_classes.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/string:
+/usr/local/include/c++/5.4.0/string:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/allocator.h:
+/usr/local/include/c++/5.4.0/bits/allocator.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++allocator.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/new_allocator.h:
+/usr/local/include/c++/5.4.0/ext/new_allocator.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/new:
+/usr/local/include/c++/5.4.0/new:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ostream_insert.h:
+/usr/local/include/c++/5.4.0/bits/ostream_insert.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/cxxabi_forced.h:
+/usr/local/include/c++/5.4.0/bits/cxxabi_forced.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_function.h:
+/usr/local/include/c++/5.4.0/bits/stl_function.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/backward/binders.h:
+/usr/local/include/c++/5.4.0/backward/binders.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/range_access.h:
+/usr/local/include/c++/5.4.0/bits/range_access.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_string.h:
+/usr/local/include/c++/5.4.0/initializer_list:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/initializer_list:
+/usr/local/include/c++/5.4.0/bits/basic_string.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/string_conversions.h:
+/usr/local/include/c++/5.4.0/ext/alloc_traits.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cstdlib:
+/usr/local/include/c++/5.4.0/bits/alloc_traits.h:
+
+/usr/local/include/c++/5.4.0/ext/string_conversions.h:
+
+/usr/local/include/c++/5.4.0/cstdlib:
 
 /usr/include/stdlib.h:
 
@@ -413,7 +408,11 @@ hashcode.hh:
 
 /usr/include/alloca.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cstdio:
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/local/include/c++/5.4.0/cstdio:
 
 /usr/include/libio.h:
 
@@ -423,7 +422,7 @@ hashcode.hh:
 
 /usr/include/bits/stdio.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cerrno:
+/usr/local/include/c++/5.4.0/cerrno:
 
 /usr/include/errno.h:
 
@@ -437,41 +436,47 @@ hashcode.hh:
 
 /usr/include/asm-generic/errno-base.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/functional_hash.h:
+/usr/local/include/c++/5.4.0/bits/functional_hash.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/hash_bytes.h:
+/usr/local/include/c++/5.4.0/bits/hash_bytes.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_string.tcc:
+/usr/local/include/c++/5.4.0/bits/basic_string.tcc:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_classes.tcc:
+/usr/local/include/c++/5.4.0/bits/locale_classes.tcc:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/streambuf:
+/usr/local/include/c++/5.4.0/system_error:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/streambuf.tcc:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/error_constants.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_ios.h:
+/usr/local/include/c++/5.4.0/stdexcept:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_facets.h:
+/usr/local/include/c++/5.4.0/streambuf:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cwctype:
+/usr/local/include/c++/5.4.0/bits/streambuf.tcc:
+
+/usr/local/include/c++/5.4.0/bits/basic_ios.h:
+
+/usr/local/include/c++/5.4.0/bits/locale_facets.h:
+
+/usr/local/include/c++/5.4.0/cwctype:
 
 /usr/include/wctype.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_base.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_base.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/streambuf_iterator.h:
+/usr/local/include/c++/5.4.0/bits/streambuf_iterator.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/ctype_inline.h:
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/locale_facets.tcc:
+/usr/local/include/c++/5.4.0/bits/locale_facets.tcc:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/basic_ios.tcc:
+/usr/local/include/c++/5.4.0/bits/basic_ios.tcc:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ostream.tcc:
+/usr/local/include/c++/5.4.0/bits/ostream.tcc:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/istream:
+/usr/local/include/c++/5.4.0/istream:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/istream.tcc:
+/usr/local/include/c++/5.4.0/bits/istream.tcc:
 
 /usr/include/sys/time.h:
 
@@ -497,6 +502,8 @@ hashcode.hh:
 
 /usr/include/bits/fcntl.h:
 
+/usr/include/bits/fcntl-linux.h:
+
 /usr/include/bits/stat.h:
 
 /usr/include/unistd.h:
@@ -509,83 +516,35 @@ hashcode.hh:
 
 /usr/include/getopt.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/algorithm:
+/usr/local/include/c++/5.4.0/algorithm:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/utility:
+/usr/local/include/c++/5.4.0/utility:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_relops.h:
+/usr/local/include/c++/5.4.0/bits/stl_relops.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_algo.h:
+/usr/local/include/c++/5.4.0/bits/stl_algo.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/algorithmfwd.h:
+/usr/local/include/c++/5.4.0/bits/algorithmfwd.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_heap.h:
+/usr/local/include/c++/5.4.0/bits/stl_heap.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_tempbuf.h:
+/usr/local/include/c++/5.4.0/bits/stl_tempbuf.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_construct.h:
+/usr/local/include/c++/5.4.0/bits/stl_construct.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/ext/alloc_traits.h:
+/usr/local/include/c++/5.4.0/bits/uniform_int_dist.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/alloc_traits.h:
+/usr/local/include/c++/5.4.0/limits:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/ptr_traits.h:
+/usr/local/include/c++/5.4.0/vector:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/random:
+/usr/local/include/c++/5.4.0/bits/stl_uninitialized.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/cmath:
+/usr/local/include/c++/5.4.0/bits/stl_vector.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/limits:
+/usr/local/include/c++/5.4.0/bits/stl_bvector.h:
 
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/random.h:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/vector:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_uninitialized.h:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_vector.h:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_bvector.h:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/vector.tcc:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/opt_random.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/x86intrin.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/ia32intrin.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/mmintrin.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/xmmintrin.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/mm_malloc.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/emmintrin.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/immintrin.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/fxsrintrin.h:
-
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/adxintrin.h:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/random.tcc:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/numeric:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/stl_numeric.h:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/functional:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/typeinfo:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/tuple:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/array:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/stdexcept:
-
-/opt/rh/devtoolset-2/root/usr/include/c++/4.8.2/bits/uses_allocator.h:
+/usr/local/include/c++/5.4.0/bits/vector.tcc:
 
 kvthread.hh:
 
@@ -598,5 +557,7 @@ circular_int.hh:
 /usr/include/sys/mman.h:
 
 /usr/include/bits/mman.h:
+
+/usr/include/bits/mman-linux.h:
 
 clp.h:

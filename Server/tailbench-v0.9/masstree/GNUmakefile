@@ -2,7 +2,7 @@ AR = ar
 CC = gcc
 CXX = g++ -std=gnu++0x
 TBENCHDIR= ../harness
-CFLAGS = -g -W -Wall -O2 -I$(TBENCHDIR)
+CFLAGS = -g -W -Wall -O2 -I$(TBENCHDIR) -I../harness/hiredis/include
 DEPSDIR := .deps
 DEPCFLAGS = -MD -MF $(DEPSDIR)/$*.d -MP
 ifeq ($(strip $(MEMMGR)), )
@@ -17,7 +17,7 @@ endif
 ifneq ($(strip $(NOSUPERPAGE)), )
   CFLAGS += -DNOSUPERPAGE
 endif
-LIBS = -lrt -lnuma  -lpthread -lm -lrt
+LIBS = -lnuma  -lpthread -lm -lrt ../harness/hiredis/lib/libhiredis.a
 LDFLAGS = -L/usr/local/zomq/lib/
 
 INCDEPS = $(TBENCHDIR)/tbench_client.h $(TBENCHDIR)/tbench_server.h

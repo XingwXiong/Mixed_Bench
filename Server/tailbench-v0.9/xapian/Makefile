@@ -11,7 +11,8 @@ TBENCH_INTEGRATED_OBJ = $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_int
 CXX = g++
 XAPIAN_INSTALL_PATH = ./xapian-core-1.2.13/install/bin
 CXXFLAGS = -Wall -W -O3 -g -std=c++0x `$(XAPIAN_INSTALL_PATH)/xapian-config --cxxflags` -I$(TBENCH_PATH)
-LIBS = `$(XAPIAN_INSTALL_PATH)/xapian-config --libs` -lpthread -lrt
+#LIBS = `$(XAPIAN_INSTALL_PATH)/xapian-config --libs` -lpthread -lrt
+LIBS = -lz -luuid xapian-core-1.2.13/install/lib/libxapian.a -lpthread -lrt
 
 # Targets and sources
 
@@ -34,13 +35,13 @@ BIN = $(XAPIAN_INTEGRATED) $(GENTERMS) $(XAPIAN_NETWORKED_SERVER) \
 all : $(BIN)
 
 $(XAPIAN_INTEGRATED) : main.o server.o client.o $(TBENCH_INTEGRATED_OBJ)
-	$(CXX) -o $@ $^ $(LIBS)
+	$(CXX) -o $@ $^ $(LIBS) -I ../harness/hiredis/include ../harness/hiredis/lib/libhiredis.a
 
 $(XAPIAN_NETWORKED_SERVER) : main.o server.o $(TBENCH_SERVER_OBJ)
 	$(CXX) -o $@ $^ $(LIBS)
 
 $(XAPIAN_NETWORKED_CLIENT) : client.o $(TBENCH_CLIENT_OBJ)
-	$(CXX) -o $@ $^ $(LIBS)
+	$(CXX) -o $@ $^ $(LIBS) -I ../harness/hiredis/include ../harness/hiredis/lib/libhiredis.a
 
 $(GENTERMS) : $(GENTERMS_SRCS) Makefile
 	$(CXX) $(CXXFLAGS) -o $@ $(GENTERMS_SRCS) $(LIBS)

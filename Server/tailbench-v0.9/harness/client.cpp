@@ -55,7 +55,31 @@ Client::Client(int _nthreads) {
     dist = nullptr; // Will get initialized in startReq()
 
     startedReqs = 0;
+    
+    server_ip = getOpt<std::string>("TBENCH_SERVER", "");
+    app_name = getOpt<std::string>("APP_NAME", "");
 
+    redis_ip = getOpt<std::string>("REDIS_IP", "172.17.0.1");
+    redis_port = getOpt<int>("REDIS_PORT", 6379);
+    redis_auth = getOpt<std::string>("REDIS_AUTH", "xingwxingw");
+    redis_ctx = redisConnect(redis_ip.c_str(), redis_port); 
+    if (redis_ctx == NULL || redis_ctx->err) {
+        if (redis_ctx) {
+            fprintf(stderr, "Error: %s\n", redis_ctx->errstr);
+        } else {
+            printf("Can't allocate redis context\n");
+            redisFree(redis_ctx);
+            redis_ctx = NULL;
+        }
+    } else {
+        freeReplyObject(redis_reply);
+        fprintf(stdout, "redis connection success!\n");
+        redis_reply = (redisReply* ) redisCommand(redis_ctx, "auth %s", redis_auth.c_str());
+        if(redis_reply->type == REDIS_REPLY_ERROR) {
+            fprintf(stderr, "Error: Redis Authentication failure\n");
+            freeReplyObject(redis_reply);
+        } else fprintf(stdout, "Authentication success!\n");
+    }
     tBenchClientInit();
 }
 
@@ -102,6 +126,7 @@ Request* Client::startReq() {
 }
 
 void Client::finiReq(Response* resp) {
+    static char val_buf[2000];
     pthread_mutex_lock(&lock);
 
     auto it = inFlightReqs.find(resp->id);
@@ -120,6 +145,14 @@ void Client::finiReq(Response* resp) {
         queueTimes.push_back(qtime);
         svcTimes.push_back(resp->svcNs);
         sjrnTimes.push_back(sjrn);
+        std::cout << queueTimes.size() << std::endl;
+        if(redis_ctx != NULL) {
+            redis_key = server_ip + "_" + app_name + "_latency";
+            sprintf(val_buf, "(%d,%d,%d)", qtime, resp->svcNs, sjrn);
+            printf("%s\n", val_buf);
+            redis_reply = (redisReply* ) redisCommand(redis_ctx, "lpush %s %s", redis_key.c_str(), val_buf);
+            freeReplyObject(redis_reply);
+        }
     }
 
     delete req;
@@ -144,7 +177,7 @@ void Client::startRoi() {
 
 void Client::dumpStats(std::string name) {
     std::string dir=getOpt<std::string>("RESULT_DIR","/home/fanfanda/client/result/");
-    std::string app_name=getOpt<std::string>("APP_NAME","");
+    //std::string app_name=getOpt<std::string>("APP_NAME","");
     int num=getOpt<int>("NUM",0);
     std::ostringstream stream;
     stream<<num;
@@ -160,6 +193,10 @@ void Client::dumpStats(std::string name) {
                     sizeof(sjrnTimes[r]));
     }
     out.close();
+    if(redis_ctx != NULL) {
+        redisFree(redis_ctx);
+        //freeReplyObject(redis_reply);
+    }
 }
 
 /*******************************************************************************
@@ -235,8 +272,10 @@ bool NetworkedClient::recv(Response* resp) {
     int recvd = recvfull(serverFd, reinterpret_cast<char*>(resp), len, 0);
     if (recvd != len) {
         error = strerror(errno);
+        std::cout << "recvd:" << recvd << std::endl;
+        std::cout << "len  :" << len << std::endl;
         std::cout<<"gougoug"<<std::endl;
-	return false;
+	    return false;
     }
 
     if (resp->type == RESPONSE) {

@@ -27,6 +27,7 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
+#include <hiredis/hiredis.h>
 
 enum ClientStatus { INIT, WARMUP, ROI, FINISHED };
 
@@ -49,6 +50,17 @@ class Client {
         std::vector<uint64_t> svcTimes;
         std::vector<uint64_t> queueTimes;
         std::vector<uint64_t> sjrnTimes;
+        
+        std::string server_ip;
+        std::string app_name;
+
+        std::string redis_ip;
+        uint64_t redis_port;
+        std::string redis_auth;
+        std::string redis_key;
+        std::string redis_val;
+        redisContext* redis_ctx;
+        redisReply* redis_reply;
 
         void _startRoi();
 

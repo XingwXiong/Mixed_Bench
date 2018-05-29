@@ -56,13 +56,13 @@ int main(int argc, char* argv[]) {
                 break;
         }
     }
-
     tBenchServerInit(numServers);
 
     Server::init(numReqsToProcess, numServers);
     Server** servers = new Server* [numServers];
-    for (unsigned i = 0; i < numServers; i++)
+    for (unsigned i = 0; i < numServers; i++) {
         servers[i] = new Server(i, dbPath);
+    }
 
     pthread_t* threads = NULL;
     if (numServers > 1) {
@@ -71,7 +71,7 @@ int main(int argc, char* argv[]) {
             pthread_create(&threads[i], NULL, Server::run, servers[i]);
         }
     }
-    
+
     Server::run(servers[numServers - 1]);
 
     if (numServers > 1) {

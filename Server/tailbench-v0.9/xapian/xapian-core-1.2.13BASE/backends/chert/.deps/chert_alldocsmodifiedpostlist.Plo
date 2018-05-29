@@ -1,0 +1,555 @@
+backends/chert/chert_alldocsmodifiedpostlist.lo: \
+ backends/chert/chert_alldocsmodifiedpostlist.cc \
+ /usr/include/stdc-predef.h config.h \
+ backends/chert/chert_alldocsmodifiedpostlist.h \
+ /usr/local/include/c++/5.4.0/string \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/local/include/c++/5.4.0/bits/stringfwd.h \
+ /usr/local/include/c++/5.4.0/bits/memoryfwd.h \
+ /usr/local/include/c++/5.4.0/bits/char_traits.h \
+ /usr/local/include/c++/5.4.0/bits/stl_algobase.h \
+ /usr/local/include/c++/5.4.0/bits/functexcept.h \
+ /usr/local/include/c++/5.4.0/bits/exception_defines.h \
+ /usr/local/include/c++/5.4.0/bits/cpp_type_traits.h \
+ /usr/local/include/c++/5.4.0/ext/type_traits.h \
+ /usr/local/include/c++/5.4.0/ext/numeric_traits.h \
+ /usr/local/include/c++/5.4.0/bits/stl_pair.h \
+ /usr/local/include/c++/5.4.0/bits/move.h \
+ /usr/local/include/c++/5.4.0/bits/concept_check.h \
+ /usr/local/include/c++/5.4.0/bits/stl_iterator_base_types.h \
+ /usr/local/include/c++/5.4.0/bits/stl_iterator_base_funcs.h \
+ /usr/local/include/c++/5.4.0/debug/debug.h \
+ /usr/local/include/c++/5.4.0/bits/stl_iterator.h \
+ /usr/local/include/c++/5.4.0/bits/ptr_traits.h \
+ /usr/local/include/c++/5.4.0/bits/predefined_ops.h \
+ /usr/local/include/c++/5.4.0/bits/postypes.h \
+ /usr/local/include/c++/5.4.0/cwchar /usr/include/wchar.h \
+ /usr/include/stdio.h \
+ /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h \
+ /usr/include/bits/wchar.h \
+ /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h \
+ /usr/include/xlocale.h /usr/include/bits/wchar2.h \
+ /usr/local/include/c++/5.4.0/bits/allocator.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/local/include/c++/5.4.0/ext/new_allocator.h \
+ /usr/local/include/c++/5.4.0/new /usr/local/include/c++/5.4.0/exception \
+ /usr/local/include/c++/5.4.0/bits/atomic_lockfree_defines.h \
+ /usr/local/include/c++/5.4.0/bits/localefwd.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/local/include/c++/5.4.0/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/local/include/c++/5.4.0/iosfwd \
+ /usr/local/include/c++/5.4.0/cctype /usr/include/ctype.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
+ /usr/local/include/c++/5.4.0/bits/ostream_insert.h \
+ /usr/local/include/c++/5.4.0/bits/cxxabi_forced.h \
+ /usr/local/include/c++/5.4.0/bits/stl_function.h \
+ /usr/local/include/c++/5.4.0/backward/binders.h \
+ /usr/local/include/c++/5.4.0/bits/range_access.h \
+ /usr/local/include/c++/5.4.0/bits/basic_string.h \
+ /usr/local/include/c++/5.4.0/ext/atomicity.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/timex.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/bits/setjmp.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/local/include/c++/5.4.0/ext/alloc_traits.h \
+ /usr/local/include/c++/5.4.0/bits/basic_string.tcc \
+ backends/chert/chert_alldocspostlist.h backends/chert/chert_postlist.h \
+ include/xapian/database.h /usr/local/include/c++/5.4.0/vector \
+ /usr/local/include/c++/5.4.0/bits/stl_construct.h \
+ /usr/local/include/c++/5.4.0/bits/stl_uninitialized.h \
+ /usr/local/include/c++/5.4.0/bits/stl_vector.h \
+ /usr/local/include/c++/5.4.0/bits/stl_bvector.h \
+ /usr/local/include/c++/5.4.0/bits/vector.tcc include/xapian/base.h \
+ include/xapian/deprecated.h include/xapian/document.h \
+ include/xapian/types.h include/xapian/termiterator.h \
+ /usr/local/include/c++/5.4.0/iterator \
+ /usr/local/include/c++/5.4.0/ostream /usr/local/include/c++/5.4.0/ios \
+ /usr/local/include/c++/5.4.0/bits/ios_base.h \
+ /usr/local/include/c++/5.4.0/bits/locale_classes.h \
+ /usr/local/include/c++/5.4.0/bits/locale_classes.tcc \
+ /usr/local/include/c++/5.4.0/stdexcept \
+ /usr/local/include/c++/5.4.0/streambuf \
+ /usr/local/include/c++/5.4.0/bits/streambuf.tcc \
+ /usr/local/include/c++/5.4.0/bits/basic_ios.h \
+ /usr/local/include/c++/5.4.0/bits/locale_facets.h \
+ /usr/local/include/c++/5.4.0/cwctype /usr/include/wctype.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_base.h \
+ /usr/local/include/c++/5.4.0/bits/streambuf_iterator.h \
+ /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h \
+ /usr/local/include/c++/5.4.0/bits/locale_facets.tcc \
+ /usr/local/include/c++/5.4.0/bits/basic_ios.tcc \
+ /usr/local/include/c++/5.4.0/bits/ostream.tcc \
+ /usr/local/include/c++/5.4.0/istream \
+ /usr/local/include/c++/5.4.0/bits/istream.tcc \
+ /usr/local/include/c++/5.4.0/bits/stream_iterator.h \
+ include/xapian/derefwrapper.h include/xapian/positioniterator.h \
+ include/xapian/visibility.h include/xapian/version.h \
+ include/xapian/valueiterator.h include/xapian/postingiterator.h \
+ backends/chert/chert_types.h common/internaltypes.h \
+ backends/chert/chert_positionlist.h backends/chert/chert_lazytable.h \
+ backends/chert/chert_table.h include/xapian/error.h \
+ backends/chert/chert_btreebase.h backends/chert/chert_cursor.h \
+ common/noreturn.h common/omassert.h common/str.h common/stringutils.h \
+ /usr/local/include/c++/5.4.0/algorithm \
+ /usr/local/include/c++/5.4.0/utility \
+ /usr/local/include/c++/5.4.0/bits/stl_relops.h \
+ /usr/local/include/c++/5.4.0/bits/stl_algo.h \
+ /usr/local/include/c++/5.4.0/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/select2.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
+ /usr/include/bits/stdlib-float.h /usr/include/bits/stdlib.h \
+ /usr/local/include/c++/5.4.0/bits/algorithmfwd.h \
+ /usr/local/include/c++/5.4.0/bits/stl_heap.h \
+ /usr/local/include/c++/5.4.0/bits/stl_tempbuf.h \
+ /usr/local/include/c++/5.4.0/cstring /usr/include/string.h \
+ /usr/include/bits/string3.h common/unaligned.h common/omassert.h \
+ /usr/include/zlib.h /usr/include/zconf.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h \
+ /usr/include/bits/unistd.h common/pack.h common/positionlist.h \
+ common/leafpostlist.h common/postlist.h common/positionlist.h \
+ common/weightinternal.h include/xapian/weight.h include/xapian/query.h \
+ common/database.h common/internaltypes.h \
+ /usr/local/include/c++/5.4.0/map \
+ /usr/local/include/c++/5.4.0/bits/stl_tree.h \
+ /usr/local/include/c++/5.4.0/bits/stl_map.h \
+ /usr/local/include/c++/5.4.0/bits/stl_multimap.h common/autoptr.h \
+ /usr/local/include/c++/5.4.0/memory \
+ /usr/local/include/c++/5.4.0/bits/stl_raw_storage_iter.h \
+ /usr/local/include/c++/5.4.0/backward/auto_ptr.h \
+ backends/chert/chert_database.h common/database.h \
+ backends/chert/chert_dbstats.h backends/chert/chert_record.h \
+ backends/chert/chert_spelling.h common/termlist.h \
+ /usr/local/include/c++/5.4.0/set \
+ /usr/local/include/c++/5.4.0/bits/stl_set.h \
+ /usr/local/include/c++/5.4.0/bits/stl_multiset.h \
+ backends/chert/chert_synonym.h common/alltermslist.h common/termlist.h \
+ backends/chert/chert_termlisttable.h backends/chert/chert_values.h \
+ common/valuestats.h backends/chert/chert_version.h common/safeuuid.h \
+ /usr/include/uuid/uuid.h /usr/include/sys/time.h \
+ backends/chert/../flint_lock.h common/debuglog.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+backends/chert/chert_alldocsmodifiedpostlist.h:
+
+/usr/local/include/c++/5.4.0/string:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/usr/local/include/c++/5.4.0/bits/stringfwd.h:
+
+/usr/local/include/c++/5.4.0/bits/memoryfwd.h:
+
+/usr/local/include/c++/5.4.0/bits/char_traits.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_algobase.h:
+
+/usr/local/include/c++/5.4.0/bits/functexcept.h:
+
+/usr/local/include/c++/5.4.0/bits/exception_defines.h:
+
+/usr/local/include/c++/5.4.0/bits/cpp_type_traits.h:
+
+/usr/local/include/c++/5.4.0/ext/type_traits.h:
+
+/usr/local/include/c++/5.4.0/ext/numeric_traits.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_pair.h:
+
+/usr/local/include/c++/5.4.0/bits/move.h:
+
+/usr/local/include/c++/5.4.0/bits/concept_check.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_iterator_base_types.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_iterator_base_funcs.h:
+
+/usr/local/include/c++/5.4.0/debug/debug.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_iterator.h:
+
+/usr/local/include/c++/5.4.0/bits/ptr_traits.h:
+
+/usr/local/include/c++/5.4.0/bits/predefined_ops.h:
+
+/usr/local/include/c++/5.4.0/bits/postypes.h:
+
+/usr/local/include/c++/5.4.0/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/wchar2.h:
+
+/usr/local/include/c++/5.4.0/bits/allocator.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/usr/local/include/c++/5.4.0/ext/new_allocator.h:
+
+/usr/local/include/c++/5.4.0/new:
+
+/usr/local/include/c++/5.4.0/exception:
+
+/usr/local/include/c++/5.4.0/bits/atomic_lockfree_defines.h:
+
+/usr/local/include/c++/5.4.0/bits/localefwd.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++locale.h:
+
+/usr/local/include/c++/5.4.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/local/include/c++/5.4.0/iosfwd:
+
+/usr/local/include/c++/5.4.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/local/include/c++/5.4.0/bits/ostream_insert.h:
+
+/usr/local/include/c++/5.4.0/bits/cxxabi_forced.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_function.h:
+
+/usr/local/include/c++/5.4.0/backward/binders.h:
+
+/usr/local/include/c++/5.4.0/bits/range_access.h:
+
+/usr/local/include/c++/5.4.0/bits/basic_string.h:
+
+/usr/local/include/c++/5.4.0/ext/atomicity.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/atomic_word.h:
+
+/usr/local/include/c++/5.4.0/ext/alloc_traits.h:
+
+/usr/local/include/c++/5.4.0/bits/basic_string.tcc:
+
+backends/chert/chert_alldocspostlist.h:
+
+backends/chert/chert_postlist.h:
+
+include/xapian/database.h:
+
+/usr/local/include/c++/5.4.0/vector:
+
+/usr/local/include/c++/5.4.0/bits/stl_construct.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_uninitialized.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_vector.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_bvector.h:
+
+/usr/local/include/c++/5.4.0/bits/vector.tcc:
+
+include/xapian/base.h:
+
+include/xapian/deprecated.h:
+
+include/xapian/document.h:
+
+include/xapian/types.h:
+
+include/xapian/termiterator.h:
+
+/usr/local/include/c++/5.4.0/iterator:
+
+/usr/local/include/c++/5.4.0/ostream:
+
+/usr/local/include/c++/5.4.0/ios:
+
+/usr/local/include/c++/5.4.0/bits/ios_base.h:
+
+/usr/local/include/c++/5.4.0/bits/locale_classes.h:
+
+/usr/local/include/c++/5.4.0/bits/locale_classes.tcc:
+
+/usr/local/include/c++/5.4.0/stdexcept:
+
+/usr/local/include/c++/5.4.0/streambuf:
+
+/usr/local/include/c++/5.4.0/bits/streambuf.tcc:
+
+/usr/local/include/c++/5.4.0/bits/basic_ios.h:
+
+/usr/local/include/c++/5.4.0/bits/locale_facets.h:
+
+/usr/local/include/c++/5.4.0/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_base.h:
+
+/usr/local/include/c++/5.4.0/bits/streambuf_iterator.h:
+
+/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
+
+/usr/local/include/c++/5.4.0/bits/locale_facets.tcc:
+
+/usr/local/include/c++/5.4.0/bits/basic_ios.tcc:
+
+/usr/local/include/c++/5.4.0/bits/ostream.tcc:
+
+/usr/local/include/c++/5.4.0/istream:
+
+/usr/local/include/c++/5.4.0/bits/istream.tcc:
+
+/usr/local/include/c++/5.4.0/bits/stream_iterator.h:
+
+include/xapian/derefwrapper.h:
+
+include/xapian/positioniterator.h:
+
+include/xapian/visibility.h:
+
+include/xapian/version.h:
+
+include/xapian/valueiterator.h:
+
+include/xapian/postingiterator.h:
+
+backends/chert/chert_types.h:
+
+common/internaltypes.h:
+
+backends/chert/chert_positionlist.h:
+
+backends/chert/chert_lazytable.h:
+
+backends/chert/chert_table.h:
+
+include/xapian/error.h:
+
+backends/chert/chert_btreebase.h:
+
+backends/chert/chert_cursor.h:
+
+common/noreturn.h:
+
+common/omassert.h:
+
+common/str.h:
+
+common/stringutils.h:
+
+/usr/local/include/c++/5.4.0/algorithm:
+
+/usr/local/include/c++/5.4.0/utility:
+
+/usr/local/include/c++/5.4.0/bits/stl_relops.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_algo.h:
+
+/usr/local/include/c++/5.4.0/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/select2.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/stdlib.h:
+
+/usr/local/include/c++/5.4.0/bits/algorithmfwd.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_heap.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_tempbuf.h:
+
+/usr/local/include/c++/5.4.0/cstring:
+
+/usr/include/string.h:
+
+/usr/include/bits/string3.h:
+
+common/unaligned.h:
+
+common/omassert.h:
+
+/usr/include/zlib.h:
+
+/usr/include/zconf.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/bits/unistd.h:
+
+common/pack.h:
+
+common/positionlist.h:
+
+common/leafpostlist.h:
+
+common/postlist.h:
+
+common/positionlist.h:
+
+common/weightinternal.h:
+
+include/xapian/weight.h:
+
+include/xapian/query.h:
+
+common/database.h:
+
+common/internaltypes.h:
+
+/usr/local/include/c++/5.4.0/map:
+
+/usr/local/include/c++/5.4.0/bits/stl_tree.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_map.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_multimap.h:
+
+common/autoptr.h:
+
+/usr/local/include/c++/5.4.0/memory:
+
+/usr/local/include/c++/5.4.0/bits/stl_raw_storage_iter.h:
+
+/usr/local/include/c++/5.4.0/backward/auto_ptr.h:
+
+backends/chert/chert_database.h:
+
+common/database.h:
+
+backends/chert/chert_dbstats.h:
+
+backends/chert/chert_record.h:
+
+backends/chert/chert_spelling.h:
+
+common/termlist.h:
+
+/usr/local/include/c++/5.4.0/set:
+
+/usr/local/include/c++/5.4.0/bits/stl_set.h:
+
+/usr/local/include/c++/5.4.0/bits/stl_multiset.h:
+
+backends/chert/chert_synonym.h:
+
+common/alltermslist.h:
+
+common/termlist.h:
+
+backends/chert/chert_termlisttable.h:
+
+backends/chert/chert_values.h:
+
+common/valuestats.h:
+
+backends/chert/chert_version.h:
+
+common/safeuuid.h:
+
+/usr/include/uuid/uuid.h:
+
+/usr/include/sys/time.h:
+
+backends/chert/../flint_lock.h:
+
+common/debuglog.h:

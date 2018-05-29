@@ -1,5 +1,5 @@
 #!/bin/bash
-source ${TAIL_DIR}/configs.sh
+source ../configs.sh
 NSERVERS=1
 WARMUPREQS=1000
 REQUESTS=3000

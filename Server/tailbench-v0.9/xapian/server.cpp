@@ -42,7 +42,6 @@ void Server::_run() {
     pthread_barrier_wait(&barrier);
 
     tBenchServerThreadStart();
-
     while (numReqsProcessed < numReqsToProcess) {
        processRequest();
        ++numReqsProcessed;
@@ -75,7 +74,6 @@ void Server::processRequest() {
 
         if (++doccount == MAX_DOC_COUNT) break;
     }
-    
     tBenchSendResp(reinterpret_cast<void*>(res), resLen);
 }
 
