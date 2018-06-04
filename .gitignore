@@ -9,7 +9,10 @@
 *.sqlite3
 *.rdb
 
-tailbench-data/
+*lats.bin
+*lats.txt
+
+tailbench-data/*
 data-generator/
 dataset/
 scratch/
@@ -18,3 +21,6 @@ shore-mt/
 models/
 .lib/
 
+jdk-8u171-linux-x64.tar.gz
+
+xapian-core-1.2.13BASE/
