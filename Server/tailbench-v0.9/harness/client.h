@@ -49,8 +49,9 @@ class Client {
 
         std::vector<uint64_t> svcTimes;
         std::vector<uint64_t> queueTimes;
-        std::vector<uint64_t> sjrnTimes;
-        
+        std::vector<uint64_t> sjrnTimes; 
+
+
         std::string server_ip;
         std::string app_name;
 
@@ -73,6 +74,7 @@ class Client {
         void startRoi();
         void dumpStats(std::string name);
 
+        bool fin_flag;
 };
 
 class NetworkedClient : public Client {

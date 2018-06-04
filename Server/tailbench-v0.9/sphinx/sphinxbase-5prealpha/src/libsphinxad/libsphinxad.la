@@ -17,7 +17,7 @@ old_library='libsphinxad.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/usr/local/zomq/lib/ /home/fanfanda/tailbench-v0.9/sphinx/sphinxbase-5prealpha/src/libsphinxbase/libsphinxbase.la -lpthread -lm'
+dependency_libs=' /root/tailbench-v0.9/sphinx/sphinxbase-5prealpha/src/libsphinxbase/libsphinxbase.la -lpthread -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,5 +38,5 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/fanfanda/tailbench-v0.9/sphinx/sphinx-install/lib'
-relink_command="(cd /home/fanfanda/tailbench-v0.9/sphinx/sphinxbase-5prealpha/src/libsphinxad; /bin/sh /home/fanfanda/tailbench-v0.9/sphinx/sphinxbase-5prealpha/libtool  --tag CC --mode=relink gcc -std=gnu99 -I../../include/sphinxbase -I../../include -I../../include -g -O2 -Wall -version-info 3:0:0 -L/usr/local/zomq/lib/ -o libsphinxad.la -rpath /home/fanfanda/tailbench-v0.9/sphinx/sphinx-install/lib ad_oss.lo ../../src/libsphinxbase/libsphinxbase.la -lpthread -lm @inst_prefix_dir@)"
+libdir='/root/tailbench-v0.9/sphinx/sphinx-install/lib'
+relink_command="(cd /root/tailbench-v0.9/sphinx/sphinxbase-5prealpha/src/libsphinxad; /bin/sh /root/tailbench-v0.9/sphinx/sphinxbase-5prealpha/libtool  --tag CC --mode=relink gcc -std=gnu99 -I../../include/sphinxbase -I../../include -I../../include -g -O2 -Wall -version-info 3:0:0 -o libsphinxad.la -rpath /root/tailbench-v0.9/sphinx/sphinx-install/lib ad_oss.lo ../../src/libsphinxbase/libsphinxbase.la -lpthread -lm @inst_prefix_dir@)"

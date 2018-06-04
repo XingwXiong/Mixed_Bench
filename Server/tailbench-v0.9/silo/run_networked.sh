@@ -17,6 +17,7 @@ echo $! > server.pid
 
 sleep 5 # Allow server to come up
 
+APP_NAME=silo \
 TBENCH_QPS=${QPS} TBENCH_MINSLEEPNS=10000 \
     ./out-perf.masstree/benchmarks/dbtest_client_networked &
 

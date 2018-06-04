@@ -1,15 +1,15 @@
-ngram_model.lo: ngram_model.c ../../../include/config.h \
- /usr/include/string.h /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h \
+ngram_model.lo: ngram_model.c /usr/include/stdc-predef.h \
+ ../../../include/config.h /usr/include/string.h /usr/include/features.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
  /usr/include/xlocale.h /usr/include/bits/string.h \
  /usr/include/bits/string2.h /usr/include/endian.h \
  /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/stdlib.h /usr/include/assert.h \
- ../../../include/sphinxbase/ngram_model.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h \
+ /usr/include/bits/byteswap-16.h /usr/include/stdlib.h \
+ /usr/include/assert.h ../../../include/sphinxbase/ngram_model.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h \
  ../../../include/sphinxbase/sphinxbase_export.h \
  ../../../include/sphinxbase/prim_type.h ../../../include/sphinx_config.h \
  ../../../include/sphinxbase/cmd_ln.h /usr/include/stdio.h \
@@ -22,7 +22,8 @@ ngram_model.lo: ngram_model.c ../../../include/config.h \
  /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
  /usr/include/bits/sigset.h /usr/include/bits/time.h \
  /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
- /usr/include/alloca.h /usr/include/setjmp.h /usr/include/bits/setjmp.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /usr/include/setjmp.h /usr/include/bits/setjmp.h \
  ../../../include/sphinxbase/filename.h ../../../include/sphinxbase/pio.h \
  /usr/include/sys/stat.h /usr/include/bits/stat.h \
  ../../../include/sphinxbase/err.h /usr/include/errno.h \
@@ -34,9 +35,11 @@ ngram_model.lo: ngram_model.c ../../../include/config.h \
  ../../../include/sphinxbase/hash_table.h \
  ../../../include/sphinxbase/glist.h ngram_model_trie.h lm_trie.h \
  ../../../include/sphinxbase/bitarr.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h lm_trie_quant.h \
  ngrams_raw.h
+
+/usr/include/stdc-predef.h:
 
 ../../../include/config.h:
 
@@ -52,7 +55,7 @@ ngram_model.lo: ngram_model.c ../../../include/config.h \
 
 /usr/include/gnu/stubs-64.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
 
 /usr/include/xlocale.h:
 
@@ -70,13 +73,15 @@ ngram_model.lo: ngram_model.c ../../../include/config.h \
 
 /usr/include/bits/typesizes.h:
 
+/usr/include/bits/byteswap-16.h:
+
 /usr/include/stdlib.h:
 
 /usr/include/assert.h:
 
 ../../../include/sphinxbase/ngram_model.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
 
 ../../../include/sphinxbase/sphinxbase_export.h:
 
@@ -128,6 +133,8 @@ ngram_model.lo: ngram_model.c ../../../include/config.h \
 
 /usr/include/alloca.h:
 
+/usr/include/bits/stdlib-float.h:
+
 /usr/include/setjmp.h:
 
 /usr/include/bits/setjmp.h:
@@ -170,7 +177,7 @@ lm_trie.h:
 
 ../../../include/sphinxbase/bitarr.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:
 
 /usr/include/stdint.h:
 

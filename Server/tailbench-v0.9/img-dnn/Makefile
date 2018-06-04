@@ -7,8 +7,8 @@ TBENCH_SERVER_OBJ = $(TBENCH_PATH)/tbench_server_networked.o
 TBENCH_CLIENT_OBJ = $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_client_networked.o
 TBENCH_INTEGRATED_OBJ = $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_integrated.o
 
-CXXFLAGS += -I$(TBENCH_PATH)
-LDFLAGS += -lrt -pthread
+CXXFLAGS += -I$(TBENCH_PATH) -I../harness/hiredis/include 
+LDFLAGS += -lrt -pthread ../harness/hiredis/lib/libhiredis.a
 
 BINS = img-dnn_integrated img-dnn_server_networked img-dnn_client_networked train
 
@@ -41,4 +41,4 @@ img-dnn_client_networked : common.o client.o $(TBENCH_CLIENT_OBJ)
 
 .PHONY : clean
 clean:
-	rm *.o $(BINS)
+	rm -rf *.o $(BINS)

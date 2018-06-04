@@ -48,5 +48,5 @@ alias headers-to-install : [ glob-tree *.h ] ;
 
 import testing ;
 
-unit-test moses_test : [ glob *Test.cpp Mock*.cpp ] $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_integrated.o ../moses-cmd//client.o moses headers ..//z ../OnDiskPt//OnDiskPt ..//boost_unit_test_framework ;
+unit-test moses_test : [ glob *Test.cpp Mock*.cpp ] $(TBENCH_PATH)/hiredis/lib/libhiredis.a $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_integrated.o ../moses-cmd//client.o moses headers ..//z ../OnDiskPt//OnDiskPt ..//boost_unit_test_framework ;
 

@@ -1,15 +1,20 @@
 #!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source /home/fanfanda/tailbench-v0.9/configs.sh
+source ${DIR}/../configs.sh
 
-THREADS=1
-REQS=100000 # Set this very high; the harness controls maxreqs
+if [[ -z "${NTHREADS}" ]]; then NTHREADS=1; fi
+if [[ -z "${SERVER_IP}" ]]; then SERVER_IP=127.0.0.1; fi
 
-TBENCH_SERVER=hw114 \
+QPS=500
+
+
+APP_NAME=img-dnn \
+TBENCH_SERVER=${SERVER_IP} \
 TBENCH_SERVER_PORT=10001 \
 TBENCH_RANDSEED=${RANDOM} \
- TBENCH_QPS=500 TBENCH_MNIST_DIR=${DATA_ROOT}/img-dnn/mnist ${TAIL_DIR}/img-dnn/img-dnn_client_networked &
+TBENCH_QPS=${QPS} TBENCH_MNIST_DIR=${DATA_ROOT}/img-dnn/mnist \
+${TAIL_ROOT}/img-dnn/img-dnn_client_networked &
 
 echo $! > client.pid
 

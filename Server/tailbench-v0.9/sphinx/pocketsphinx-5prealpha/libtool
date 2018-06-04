@@ -2,7 +2,7 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (pocketsphinx) 5prealpha
-# Libtool was configured on host hw114:
+# Libtool was configured on host test:
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -75,19 +75,19 @@ build=x86_64-unknown-linux-gnu
 build_os=linux-gnu
 
 # A sed program that does not truncate output.
-SED="/bin/sed"
+SED="/usr/bin/sed"
 
 # Sed that helps us avoid accidentally triggering echo(1) options like -n.
 Xsed="$SED -e 1s/^X//"
 
 # A grep program that handles long lines.
-GREP="/bin/grep"
+GREP="/usr/bin/grep"
 
 # An ERE matcher.
-EGREP="/bin/grep -E"
+EGREP="/usr/bin/grep -E"
 
 # A literal string matcher.
-FGREP="/bin/grep -F"
+FGREP="/usr/bin/grep -F"
 
 # A BSD- or MS-compatible name lister.
 NM="/usr/bin/nm -B"
@@ -272,10 +272,10 @@ finish_eval=""
 hardcode_into_libs=yes
 
 # Compile-time system search path for libraries.
-sys_lib_search_path_spec="/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2 /opt/rh/devtoolset-2/root/usr/lib64 /lib64 /usr/lib64 "
+sys_lib_search_path_spec="/usr/lib/gcc/x86_64-redhat-linux/4.8.5 /usr/lib64 /lib64 "
 
 # Run-time system search path for libraries.
-sys_lib_dlsearch_path_spec="/lib64 /usr/lib64 /lib /usr/lib /usr/lib64/atlas /usr/java/jdk1.7.0/jre/lib/amd64/server /usr/lib64 /usr/lib64/mysql /usr/lib64/qt-3.3/lib /usr/lib64/xulrunner /usr/local/lib /usr/local/lib/pkgconfig /home/fanfanda/tailbench-v0.9/xapian/xapian-core-1.2.13/install /home/fanfanda/tailbench-v0.9/xapian/xapian-core-1.2.13/install/lib /home/fanfanda/tailbench-v0.9/sphinx/sphinx-install/lib /usr/lib64/glib-2.0/include /usr/lib64/glib/include /usr/lib64 "
+sys_lib_dlsearch_path_spec="/lib64 /usr/lib64 /lib /usr/lib "
 
 # Whether dlopen is supported.
 dlopen_support=unknown
@@ -292,7 +292,7 @@ striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/opt/rh/devtoolset-2/root/usr/libexec/gcc/x86_64-redhat-linux/4.8.2/ld -m elf_x86_64"
+LD="/usr/bin/ld"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -317,7 +317,7 @@ pic_flag=" -fPIC -DPIC"
 wl="-Wl,"
 
 # Compiler flag to prevent dynamic linking.
-link_static_flag="-static"
+link_static_flag=""
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"

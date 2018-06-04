@@ -1,4 +1,5 @@
 CXX = g++
+PKG_CONFIG_PATH=./sphinx-install/lib/pkgconfig 
 
 TBENCHDIR = ../harness
 TBENCH_NETWORKED_SERVER_OBJS = $(TBENCHDIR)/tbench_server_networked.o
@@ -10,7 +11,7 @@ TBENCH_INTEGRATED_OBJS = $(TBENCHDIR)/client.o \
 CXXFLAGS = -DMODELDIR=\"`pkg-config --variable=modeldir pocketsphinx`\" \
 		     `pkg-config --cflags --libs pocketsphinx sphinxbase` \
 			 -I$(TBENCHDIR) -g -O3 -std=c++0x
-LDFLAGS = -pthread -lrt
+LDFLAGS = -pthread -lrt ../harness/hiredis/lib/libhiredis.a
 
 .PHONY : all clean run zsim
 
@@ -32,15 +33,18 @@ client.o : client.cpp
 
 decoder_integrated : client.o $(TBENCH_INTEGRATED_OBJS) decoder.o
 	export PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) && \
-	$(CXX) $^ -o $@ `pkg-config --libs pocketsphinx sphinxbase` $(LDFLAGS)
+	$(CXX) $^ -o $@ /root/tailbench-v0.9/sphinx/sphinx-install/lib/libpocketsphinx.a  /root/tailbench-v0.9/sphinx/sphinx-install/lib/libsphinxad.a  /root/tailbench-v0.9/sphinx/sphinx-install/lib/libsphinxbase.a $(LDFLAGS)
+	#$(CXX) $^ -o $@ `pkg-config --libs pocketsphinx sphinxbase` $(LDFLAGS)
 
 decoder_server_networked : $(TBENCH_NETWORKED_SERVER_OBJS) decoder.o
 	export PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) && \
-	$(CXX) $^ -o $@ `pkg-config --libs pocketsphinx sphinxbase` $(LDFLAGS) 
+	$(CXX) $^ -o $@ /root/tailbench-v0.9/sphinx/sphinx-install/lib/libpocketsphinx.a  /root/tailbench-v0.9/sphinx/sphinx-install/lib/libsphinxad.a  /root/tailbench-v0.9/sphinx/sphinx-install/lib/libsphinxbase.a $(LDFLAGS)
+#	$(CXX) $^ -o $@ `pkg-config --libs pocketsphinx sphinxbase` $(LDFLAGS) 
 
 decoder_client_networked : client.o $(TBENCH_NETWORKED_CLIENT_OBJS)
 	export PKG_CONFIG_PATH=$(PKG_CONFIG_PATH) && \
-	$(CXX) $^ -o $@ `pkg-config --libs pocketsphinx sphinxbase`$(LDFLAGS) 
+	$(CXX) $^ -o $@ /root/tailbench-v0.9/sphinx/sphinx-install/lib/libpocketsphinx.a  /root/tailbench-v0.9/sphinx/sphinx-install/lib/libsphinxad.a  /root/tailbench-v0.9/sphinx/sphinx-install/lib/libsphinxbase.a $(LDFLAGS)
+#	$(CXX) $^ -o $@ `pkg-config --libs pocketsphinx sphinxbase`$(LDFLAGS) 
 
 clean:
 	rm *.o

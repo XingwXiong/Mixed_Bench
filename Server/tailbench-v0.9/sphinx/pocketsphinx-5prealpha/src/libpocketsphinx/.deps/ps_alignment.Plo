@@ -1,51 +1,55 @@
-ps_alignment.lo: ps_alignment.c \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h \
+ps_alignment.lo: ps_alignment.c /usr/include/stdc-predef.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h \
  /usr/include/stdlib.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/bits/byteswap.h /usr/include/sys/types.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
- /usr/include/alloca.h /usr/include/setjmp.h /usr/include/bits/setjmp.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/byteswap-16.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h /usr/include/setjmp.h \
+ /usr/include/bits/setjmp.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h \
  ps_alignment.h dict2pid.h /usr/include/stdio.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h \
  /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
  /usr/include/bits/string2.h s3types.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/float.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/float.h \
  /usr/include/assert.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/err.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/err.h \
  /usr/include/errno.h /usr/include/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  bin_mdef.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h \
  ../../include/pocketsphinx_export.h mdef.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h \
  dict.h hmm.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h:
+/usr/include/stdc-predef.h:
+
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h:
 
 /usr/include/stdlib.h:
 
@@ -59,7 +63,7 @@ ps_alignment.lo: ps_alignment.c \
 
 /usr/include/gnu/stubs-64.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
 
 /usr/include/bits/waitflags.h:
 
@@ -71,11 +75,13 @@ ps_alignment.lo: ps_alignment.c \
 
 /usr/include/bits/byteswap.h:
 
-/usr/include/sys/types.h:
-
 /usr/include/bits/types.h:
 
 /usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/sys/types.h:
 
 /usr/include/time.h:
 
@@ -93,15 +99,17 @@ ps_alignment.lo: ps_alignment.c \
 
 /usr/include/alloca.h:
 
+/usr/include/bits/stdlib-float.h:
+
 /usr/include/setjmp.h:
 
 /usr/include/bits/setjmp.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h:
 
 ps_alignment.h:
 
@@ -115,7 +123,7 @@ dict2pid.h:
 
 /usr/include/wchar.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -123,11 +131,11 @@ dict2pid.h:
 
 /usr/include/bits/stdio.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h:
 
 /usr/include/string.h:
 
@@ -139,11 +147,11 @@ dict2pid.h:
 
 s3types.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/float.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/float.h:
 
 /usr/include/assert.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/err.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/err.h:
 
 /usr/include/errno.h:
 
@@ -159,25 +167,25 @@ s3types.h:
 
 bin_mdef.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h:
 
 ../../include/pocketsphinx_export.h:
 
 mdef.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h:
 
 dict.h:
 
 hmm.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -189,4 +197,4 @@ hmm.h:
 
 /usr/include/bits/posix2_lim.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h:

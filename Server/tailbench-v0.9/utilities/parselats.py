@@ -42,8 +42,8 @@ if __name__ == '__main__':
         p_num = stats.scoreatpercentile(sjrnTimes, int(user_p_num))
         maxLat = max(sjrnTimes)
         minLat = min(sjrnTimes)
-        print("user_p_num th latency %.3f ms | max latency %.3f ms" \
-                % (p_num, maxLat))
+        print("user_p_num %dth latency %.3f ms | max latency %.3f ms" \
+                % (int(user_p_num), p_num, maxLat))
 
     latsFile = sys.argv[1]
     user_num = sys.argv[2]

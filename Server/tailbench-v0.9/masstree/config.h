@@ -55,7 +55,7 @@
 /* #undef HAVE_JEMALLOC */
 
 /* Define if you have libnuma. */
-#define HAVE_LIBNUMA 1
+/* #undef HAVE_LIBNUMA */
 
 /* Define to 1 if the system has the type `long long'. */
 #define HAVE_LONG_LONG 1
@@ -67,7 +67,7 @@
 #define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the <numa.h> header file. */
-#define HAVE_NUMA_H 1
+/* #undef HAVE_NUMA_H */
 
 /* Define if off_t and long are the same type. */
 #define HAVE_OFF_T_IS_LONG 1
@@ -97,7 +97,7 @@
 #define HAVE_STD_IS_RVALUE_REFERENCE 1
 
 /* Define if you have the std::is_trivially_copyable template. */
-#define HAVE_STD_IS_TRIVIALLY_COPYABLE 1
+/* #undef HAVE_STD_IS_TRIVIALLY_COPYABLE */
 
 /* Define to 1 if you have the <strings.h> header file. */
 #define HAVE_STRINGS_H 1

@@ -56,4 +56,4 @@ client.o : client.cpp $(TBENCH_INC)
 	$(CXX) $(CXXFLAGS) -c -o $@ $<
 
 clean:
-	rm -f $(BIN)
+	rm -f $(BIN) *.o

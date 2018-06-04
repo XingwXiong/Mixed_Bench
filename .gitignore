@@ -13,6 +13,7 @@
 *lats.txt
 
 tailbench-data/*
+tailbench-scratchData/*
 data-generator/
 dataset/
 scratch/

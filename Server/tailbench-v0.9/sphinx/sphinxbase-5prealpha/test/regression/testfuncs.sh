@@ -1,7 +1,7 @@
 # Utility functions and parameters for regression tests
 
 # Predefined directories you may need
-# Stupid broken RedHat autoconf doesn't do /home/fanfanda/tailbench-v0.9/sphinx/sphinxbase-5prealpha
+# Stupid broken RedHat autoconf doesn't do /root/tailbench-v0.9/sphinx/sphinxbase-5prealpha
 builddir="../.."
 sourcedir="../.."
 tests=$sourcedir/test

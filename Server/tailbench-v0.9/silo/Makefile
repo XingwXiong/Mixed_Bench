@@ -75,7 +75,7 @@ else
 	$(error invalid mode)
 endif
 
-CXXFLAGS := -g -Wall -std=c++0x
+CXXFLAGS := -g -Wall -std=c++0x -I../harness/hiredis/include ../harness/hiredis/lib/libhiredis.a
 CXXFLAGS += -MD -Ithird-party/lz4 -DCONFIG_H=\"$(CONFIG_H)\"
 ifeq ($(DEBUG_S),1)
         CXXFLAGS += -fno-omit-frame-pointer -DDEBUG
@@ -100,7 +100,8 @@ endif
 TOP     := $(shell echo $${PWD-`pwd`})
 LDFLAGS := -lpthread -lnuma -lrt
 
-LZ4LDFLAGS := -Lthird-party/lz4 -llz4 -Wl,-rpath,$(TOP)/third-party/lz4
+LZ4LDFLAGS := -Lthird-party/lz4 -llz4 -Wl,-rpath,$(TOP)/third-party/lz4 -I../harness/hiredis/include ../harness/hiredis/lib/libhiredis.a
+
 
 ifeq ($(USE_MALLOC_MODE_S),1)
         CXXFLAGS+=-DUSE_JEMALLOC

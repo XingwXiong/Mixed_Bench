@@ -2,11 +2,11 @@ AR = ar
 CC = gcc
 CXX = g++ -std=gnu++0x
 TBENCHDIR= ../harness
-CFLAGS = -g -W -Wall -O2 -I$(TBENCHDIR) -I../harness/hiredis/include
+CFLAGS = -g -W -Wall -O2 -I$(TBENCHDIR) 
 DEPSDIR := .deps
 DEPCFLAGS = -MD -MF $(DEPSDIR)/$*.d -MP
 ifeq ($(strip $(MEMMGR)), )
-  MEMMGR = -ltcmalloc_minimal
+  MEMMGR = /usr/local/lib/libtcmalloc_minimal.a
 endif
 ifneq ($(strip $(KEYSWAP)), )
   CFLAGS += -DKEYSWAP
@@ -17,8 +17,8 @@ endif
 ifneq ($(strip $(NOSUPERPAGE)), )
   CFLAGS += -DNOSUPERPAGE
 endif
-LIBS = -lnuma  -lpthread -lm -lrt ../harness/hiredis/lib/libhiredis.a
-LDFLAGS = -L/usr/local/zomq/lib/
+LIBS =  -lpthread -lm -lrt $(TBENCHDIR)/hiredis/lib/libhiredis.a
+LDFLAGS = 
 
 INCDEPS = $(TBENCHDIR)/tbench_client.h $(TBENCHDIR)/tbench_server.h
 TBENCH_NETWORK_SERVER_OBJS = $(TBENCHDIR)/tbench_server_networked.o
@@ -82,7 +82,7 @@ configure config.h.in: configure.ac
 	touch config.h.in
 
 config.status: configure
-	./configure  '--disable-assertions' '--with-malloc=tcmalloc' 'LDFLAGS=-L/usr/local/zomq/lib/' 'CPPFLAGS=-I/usr/local/zomq/include/'
+	./configure  '--disable-assertions' '--with-malloc=tcmalloc'
 
 $(DEPSDIR)/stamp:
 	mkdir -p $(DEPSDIR)

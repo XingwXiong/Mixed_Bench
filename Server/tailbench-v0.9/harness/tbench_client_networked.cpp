@@ -30,6 +30,7 @@ void* send(void* c) {
     NetworkedClient* client = reinterpret_cast<NetworkedClient*>(c);
 
     while (true) {
+        if(client->fin_flag) break;
         Request* req = client->startReq();
         if (!client->send(req)) {
             std::cerr << "[CLIENT] send() failed : " << client->errmsg() \
@@ -60,6 +61,7 @@ void* recv(void* c) {
             client->startRoi();
         } else if (resp.type == FINISH) {
             client->dumpStats(name);
+            client->fin_flag = true;
             //exit(0);
             syscall(SYS_exit_group, 0);
         } else {

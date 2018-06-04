@@ -1,5 +1,5 @@
 compiler.o: compiler.cc /usr/include/stdc-predef.h config.h compiler.hh \
- /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h \
  /usr/include/stdint.h /usr/include/features.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h /usr/include/bits/wchar.h \
@@ -8,7 +8,7 @@ compiler.o: compiler.cc /usr/include/stdc-predef.h config.h compiler.hh \
  /usr/include/sys/uio.h /usr/include/sys/types.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/time.h \
- /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/byteswap.h /usr/include/bits/byteswap-16.h \
  /usr/include/sys/select.h /usr/include/bits/select.h \
@@ -18,18 +18,18 @@ compiler.o: compiler.cc /usr/include/stdc-predef.h config.h compiler.hh \
  /usr/include/bits/socket_type.h /usr/include/bits/sockaddr.h \
  /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
- /usr/include/bits/in.h /usr/local/include/c++/5.4.0/type_traits \
- /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h \
- /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
- /usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/include/bits/in.h /usr/include/c++/4.8.2/type_traits \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++config.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/os_defines.h \
+ /usr/include/c++/4.8.2/x86_64-redhat-linux/bits/cpu_defines.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h \
- /usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h /usr/include/stdlib.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/xlocale.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h
+ /usr/include/bits/stdlib-float.h
 
 /usr/include/stdc-predef.h:
 
@@ -37,7 +37,7 @@ config.h:
 
 compiler.hh:
 
-/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdint.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -71,7 +71,7 @@ compiler.hh:
 
 /usr/include/time.h:
 
-/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stddef.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
 
 /usr/include/endian.h:
 
@@ -111,13 +111,13 @@ compiler.hh:
 
 /usr/include/bits/in.h:
 
-/usr/local/include/c++/5.4.0/type_traits:
+/usr/include/c++/4.8.2/type_traits:
 
-/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/c++config.h:
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/c++config.h:
 
-/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/os_defines.h:
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/os_defines.h:
 
-/usr/local/include/c++/5.4.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+/usr/include/c++/4.8.2/x86_64-redhat-linux/bits/cpu_defines.h:
 
 /usr/include/stdio.h:
 
@@ -127,7 +127,7 @@ compiler.hh:
 
 /usr/include/wchar.h:
 
-/usr/local/lib/gcc/x86_64-unknown-linux-gnu/5.4.0/include/stdarg.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -144,7 +144,5 @@ compiler.hh:
 /usr/include/xlocale.h:
 
 /usr/include/alloca.h:
-
-/usr/include/bits/stdlib-bsearch.h:
 
 /usr/include/bits/stdlib-float.h:

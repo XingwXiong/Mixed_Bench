@@ -17,7 +17,7 @@ ifneq ($(strip $(NOSUPERPAGE)), )
   CFLAGS += -DNOSUPERPAGE
 endif
 LIBS =  -lpthread -lm
-LDFLAGS = -lpthread -lnuma -lrt -ljemalloc
+LDFLAGS = 
 
 all: test_atomics mtd mtclient mttest
 
@@ -73,7 +73,7 @@ configure config.h.in: configure.ac
 	touch config.h.in
 
 config.status: configure
-	./configure  '--enable-max-key-len=1024' '--disable-assertions' '--disable-invariants' '--disable-preconditions' '--with-malloc=jemalloc' 'LDFLAGS=-lpthread -lnuma -lrt -ljemalloc' 'CPPFLAGS=-I/usr/local/zomq/include/'
+	./configure  '--enable-max-key-len=1024' '--disable-assertions' '--disable-invariants' '--disable-preconditions' '--with-malloc=jemalloc'
 
 $(DEPSDIR)/stamp:
 	mkdir -p $(DEPSDIR)

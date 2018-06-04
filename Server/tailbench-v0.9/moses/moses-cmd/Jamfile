@@ -3,11 +3,11 @@ local TBENCH_PATH = [ modules.peek : TBENCH_PATH ] ;
 
 alias deps : IOWrapper.cpp mbr.cpp LatticeMBR.cpp TranslationAnalysis.cpp ..//z ..//boost_iostreams ..//boost_filesystem ../moses//moses  ;
 
-alias tbench_integrated_objs : $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_integrated.o ../moses-cmd//client.o ;
+alias tbench_integrated_objs : $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_integrated.o ../moses-cmd//client.o  $(TBENCH_PATH)/hiredis/lib/libhiredis.a ;
 
 alias tbench_server_networked_objs : $(TBENCH_PATH)/tbench_server_networked.o ;
 
-alias tbench_client_networked_objs : $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_client_networked.o ../moses-cmd//client.o ;
+alias tbench_client_networked_objs : $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_client_networked.o ../moses-cmd//client.o $(TBENCH_PATH)/hiredis/lib/libhiredis.a ;
 
 obj client.o : Client.cpp ;
 

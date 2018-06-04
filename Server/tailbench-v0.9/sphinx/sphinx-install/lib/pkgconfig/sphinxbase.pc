@@ -1,4 +1,4 @@
-prefix=/home/fanfanda/tailbench-v0.9/sphinx/sphinx-install
+prefix=/root/tailbench-v0.9/sphinx/sphinx-install
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

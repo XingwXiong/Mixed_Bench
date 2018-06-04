@@ -53,7 +53,7 @@ PermutationScorer.cpp
 StatisticsBasedScorer.cpp
 ../util//kenutil m ..//z ;
 
-exe mert : mert.cpp mert_lib $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_integrated.o ../moses-cmd//client.o ../moses//ThreadPool ;
+exe mert : mert.cpp mert_lib $(TBENCH_PATH)/hiredis/lib/libhiredis.a $(TBENCH_PATH)/client.o $(TBENCH_PATH)/tbench_server_integrated.o ../moses-cmd//client.o ../moses//ThreadPool ;
 
 exe extractor : extractor.cpp mert_lib ;
 

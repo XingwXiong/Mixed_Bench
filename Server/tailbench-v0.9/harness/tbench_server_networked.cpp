@@ -233,10 +233,13 @@ size_t NetworkedServer::recvReq(int id, void** data) {
 };
 
 void NetworkedServer::sendResp(int id, const void* data, size_t len) {
+    if(this->fin_flag) {
+        return;
+    }
+
     pthread_mutex_lock(&sendLock);
 
     Response* resp = new Response();
-    
     resp->type = RESPONSE;
     resp->id = reqInfo[id].id;
     resp->len = len;
@@ -266,6 +269,7 @@ void NetworkedServer::sendResp(int id, const void* data, size_t len) {
             totalLen = sizeof(Response) - MAX_RESP_BYTES;
             sent = sendfull(fd, reinterpret_cast<const char*>(resp), totalLen, 0);
             assert(sent == totalLen);
+            this->fin_flag = true;
         }
     }
 

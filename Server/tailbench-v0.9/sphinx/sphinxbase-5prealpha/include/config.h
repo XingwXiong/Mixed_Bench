@@ -59,7 +59,7 @@
 #define HAVE_PTHREAD_H 1
 
 /* If available, contains the Python version number currently in use. */
-#define HAVE_PYTHON "3.6"
+#define HAVE_PYTHON "2.7"
 
 /* Define to 1 if you have the `snprintf' function. */
 #define HAVE_SNPRINTF 1

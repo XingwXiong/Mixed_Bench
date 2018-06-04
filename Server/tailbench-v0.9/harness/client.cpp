@@ -55,7 +55,7 @@ Client::Client(int _nthreads) {
     dist = nullptr; // Will get initialized in startReq()
 
     startedReqs = 0;
-    
+    fin_flag = false; 
     server_ip = getOpt<std::string>("TBENCH_SERVER", "");
     app_name = getOpt<std::string>("APP_NAME", "");
 
@@ -145,11 +145,11 @@ void Client::finiReq(Response* resp) {
         queueTimes.push_back(qtime);
         svcTimes.push_back(resp->svcNs);
         sjrnTimes.push_back(sjrn);
-        std::cout << queueTimes.size() << std::endl;
+        //std::cout << queueTimes.size() << std::endl;
         if(redis_ctx != NULL) {
             redis_key = server_ip + "_" + app_name + "_latency";
             sprintf(val_buf, "(%d,%d,%d)", qtime, resp->svcNs, sjrn);
-            printf("%s\n", val_buf);
+            //printf("%s\n", val_buf);
             redis_reply = (redisReply* ) redisCommand(redis_ctx, "lpush %s %s", redis_key.c_str(), val_buf);
             freeReplyObject(redis_reply);
         }
@@ -176,12 +176,13 @@ void Client::startRoi() {
 }
 
 void Client::dumpStats(std::string name) {
-    std::string dir=getOpt<std::string>("RESULT_DIR","/home/fanfanda/client/result/");
+    std::string dir=getOpt<std::string>("RESULT_DIR","/root/result/");
     //std::string app_name=getOpt<std::string>("APP_NAME","");
     int num=getOpt<int>("NUM",0);
     std::ostringstream stream;
-    stream<<num;
-    std::ofstream out(dir+app_name+"_"+stream.str()+"_lats.bin", std::ios::out | std::ios::binary);
+    stream << num;
+    std::string file_path = dir+app_name+"_"+stream.str()+"_lats.bin";
+    std::ofstream out(file_path, std::ios::out | std::ios::binary);
     int reqs = sjrnTimes.size();
 
     for (int r = 0; r < reqs; ++r) {
@@ -193,6 +194,7 @@ void Client::dumpStats(std::string name) {
                     sizeof(sjrnTimes[r]));
     }
     out.close();
+    std::cout << "RESULT_FILE_PATH: " << file_path  << std::endl;
     if(redis_ctx != NULL) {
         redisFree(redis_ctx);
         //freeReplyObject(redis_reply);

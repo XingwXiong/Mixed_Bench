@@ -1,25 +1,26 @@
-pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
- /usr/local/include/python3.6m/Python.h \
- /usr/local/include/python3.6m/patchlevel.h \
- /usr/local/include/python3.6m/pyconfig.h \
- /usr/local/include/python3.6m/pymacconfig.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h \
+pocketsphinx_wrap.lo: pocketsphinx_wrap.c /usr/include/stdc-predef.h \
+ /usr/include/python2.7/Python.h /usr/include/python2.7/patchlevel.h \
+ /usr/include/python2.7/pyconfig.h /usr/include/bits/wordsize.h \
+ /usr/include/python2.7/pyconfig-64.h \
+ /usr/include/python2.7/pymacconfig.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h \
  /usr/include/limits.h /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/stdio_lim.h /usr/include/stdio.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
+ /usr/include/linux/limits.h /usr/include/bits/posix2_lim.h \
+ /usr/include/bits/xopen_lim.h /usr/include/bits/stdio_lim.h \
+ /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h \
  /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
  /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
  /usr/include/bits/string2.h /usr/include/endian.h \
  /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
- /usr/include/stdlib.h /usr/include/errno.h /usr/include/bits/errno.h \
+ /usr/include/bits/byteswap-16.h /usr/include/stdlib.h \
+ /usr/include/errno.h /usr/include/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
@@ -27,11 +28,11 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
  /usr/include/bits/select.h /usr/include/bits/sigset.h \
  /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
  /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/unistd.h /usr/include/bits/posix_opt.h \
- /usr/include/bits/environments.h /usr/include/bits/confname.h \
- /usr/include/getopt.h /usr/include/assert.h \
- /usr/local/include/python3.6m/pyport.h /usr/include/inttypes.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h \
+ /usr/include/bits/stdlib-float.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/getopt.h /usr/include/assert.h \
+ /usr/include/python2.7/pyport.h /usr/include/inttypes.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
  /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
@@ -39,114 +40,87 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
  /usr/include/sys/time.h /usr/include/bits/timex.h \
  /usr/include/sys/stat.h /usr/include/bits/stat.h \
- /usr/local/include/python3.6m/pymacro.h \
- /usr/local/include/python3.6m/pyatomic.h \
- /usr/local/include/python3.6m/pymath.h \
- /usr/local/include/python3.6m/pytime.h \
- /usr/local/include/python3.6m/object.h \
- /usr/local/include/python3.6m/pymem.h \
- /usr/local/include/python3.6m/objimpl.h \
- /usr/local/include/python3.6m/typeslots.h \
- /usr/local/include/python3.6m/pyhash.h \
- /usr/local/include/python3.6m/pydebug.h \
- /usr/local/include/python3.6m/bytearrayobject.h \
- /usr/local/include/python3.6m/bytesobject.h \
- /usr/local/include/python3.6m/unicodeobject.h /usr/include/ctype.h \
- /usr/local/include/python3.6m/longobject.h \
- /usr/local/include/python3.6m/longintrepr.h \
- /usr/local/include/python3.6m/boolobject.h \
- /usr/local/include/python3.6m/floatobject.h \
- /usr/local/include/python3.6m/complexobject.h \
- /usr/local/include/python3.6m/rangeobject.h \
- /usr/local/include/python3.6m/memoryobject.h \
- /usr/local/include/python3.6m/tupleobject.h \
- /usr/local/include/python3.6m/listobject.h \
- /usr/local/include/python3.6m/dictobject.h \
- /usr/local/include/python3.6m/odictobject.h \
- /usr/local/include/python3.6m/enumobject.h \
- /usr/local/include/python3.6m/setobject.h \
- /usr/local/include/python3.6m/methodobject.h \
- /usr/local/include/python3.6m/moduleobject.h \
- /usr/local/include/python3.6m/funcobject.h \
- /usr/local/include/python3.6m/classobject.h \
- /usr/local/include/python3.6m/fileobject.h \
- /usr/local/include/python3.6m/pycapsule.h \
- /usr/local/include/python3.6m/traceback.h \
- /usr/local/include/python3.6m/pystate.h \
- /usr/local/include/python3.6m/sliceobject.h \
- /usr/local/include/python3.6m/cellobject.h \
- /usr/local/include/python3.6m/iterobject.h \
- /usr/local/include/python3.6m/genobject.h \
- /usr/local/include/python3.6m/descrobject.h \
- /usr/local/include/python3.6m/warnings.h \
- /usr/local/include/python3.6m/weakrefobject.h \
- /usr/local/include/python3.6m/structseq.h \
- /usr/local/include/python3.6m/namespaceobject.h \
- /usr/local/include/python3.6m/codecs.h \
- /usr/local/include/python3.6m/pyerrors.h \
- /usr/local/include/python3.6m/pyarena.h \
- /usr/local/include/python3.6m/modsupport.h \
- /usr/local/include/python3.6m/pythonrun.h \
- /usr/local/include/python3.6m/pylifecycle.h \
- /usr/local/include/python3.6m/ceval.h \
- /usr/local/include/python3.6m/sysmodule.h \
- /usr/local/include/python3.6m/osmodule.h \
- /usr/local/include/python3.6m/intrcheck.h \
- /usr/local/include/python3.6m/import.h \
- /usr/local/include/python3.6m/abstract.h \
- /usr/local/include/python3.6m/bltinmodule.h \
- /usr/local/include/python3.6m/compile.h \
- /usr/local/include/python3.6m/code.h \
- /usr/local/include/python3.6m/eval.h \
- /usr/local/include/python3.6m/pyctype.h \
- /usr/local/include/python3.6m/pystrtod.h \
- /usr/local/include/python3.6m/pystrcmp.h \
- /usr/local/include/python3.6m/dtoa.h \
- /usr/local/include/python3.6m/fileutils.h \
- /usr/local/include/python3.6m/pyfpe.h ../../include/pocketsphinx.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fe.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/feat.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmn.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/agc.h \
+ /usr/include/python2.7/pymath.h /usr/include/python2.7/pymem.h \
+ /usr/include/python2.7/object.h /usr/include/python2.7/objimpl.h \
+ /usr/include/python2.7/pydebug.h /usr/include/python2.7/unicodeobject.h \
+ /usr/include/ctype.h /usr/include/python2.7/intobject.h \
+ /usr/include/python2.7/boolobject.h /usr/include/python2.7/longobject.h \
+ /usr/include/python2.7/floatobject.h \
+ /usr/include/python2.7/complexobject.h \
+ /usr/include/python2.7/rangeobject.h \
+ /usr/include/python2.7/stringobject.h \
+ /usr/include/python2.7/memoryobject.h \
+ /usr/include/python2.7/bufferobject.h \
+ /usr/include/python2.7/bytesobject.h \
+ /usr/include/python2.7/bytearrayobject.h \
+ /usr/include/python2.7/tupleobject.h /usr/include/python2.7/listobject.h \
+ /usr/include/python2.7/dictobject.h /usr/include/python2.7/enumobject.h \
+ /usr/include/python2.7/setobject.h /usr/include/python2.7/methodobject.h \
+ /usr/include/python2.7/moduleobject.h \
+ /usr/include/python2.7/funcobject.h /usr/include/python2.7/classobject.h \
+ /usr/include/python2.7/fileobject.h /usr/include/python2.7/cobject.h \
+ /usr/include/python2.7/pycapsule.h /usr/include/python2.7/traceback.h \
+ /usr/include/python2.7/sliceobject.h /usr/include/python2.7/cellobject.h \
+ /usr/include/python2.7/iterobject.h /usr/include/python2.7/genobject.h \
+ /usr/include/python2.7/descrobject.h /usr/include/python2.7/warnings.h \
+ /usr/include/python2.7/weakrefobject.h /usr/include/python2.7/codecs.h \
+ /usr/include/python2.7/pyerrors.h /usr/include/python2.7/pystate.h \
+ /usr/include/python2.7/pyarena.h /usr/include/python2.7/modsupport.h \
+ /usr/include/python2.7/pythonrun.h /usr/include/python2.7/ceval.h \
+ /usr/include/python2.7/sysmodule.h /usr/include/python2.7/intrcheck.h \
+ /usr/include/python2.7/import.h /usr/include/python2.7/abstract.h \
+ /usr/include/python2.7/compile.h /usr/include/python2.7/code.h \
+ /usr/include/python2.7/eval.h /usr/include/python2.7/pyctype.h \
+ /usr/include/python2.7/pystrtod.h /usr/include/python2.7/pystrcmp.h \
+ /usr/include/python2.7/dtoa.h /usr/include/python2.7/pyfpe.h \
+ ../../include/pocketsphinx.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fe.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/feat.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmn.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/agc.h \
  ../../include/pocketsphinx_export.h ../../include/cmdln_macro.h \
  ../../include/ps_lattice.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ngram_model.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ngram_model.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h \
  ../../include/ps_mllr.h ../../include/ps_search.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fsg_model.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fsg_model.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h \
  /usr/include/setjmp.h /usr/include/bits/setjmp.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h \
- /home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h \
- /opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/float.h
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h \
+ /root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h \
+ /usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/float.h
 
-/usr/local/include/python3.6m/Python.h:
+/usr/include/stdc-predef.h:
 
-/usr/local/include/python3.6m/patchlevel.h:
+/usr/include/python2.7/Python.h:
 
-/usr/local/include/python3.6m/pyconfig.h:
+/usr/include/python2.7/patchlevel.h:
 
-/usr/local/include/python3.6m/pymacconfig.h:
+/usr/include/python2.7/pyconfig.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/limits.h:
+/usr/include/bits/wordsize.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/syslimits.h:
+/usr/include/python2.7/pyconfig-64.h:
+
+/usr/include/python2.7/pymacconfig.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/limits.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/syslimits.h:
 
 /usr/include/limits.h:
 
 /usr/include/features.h:
 
 /usr/include/sys/cdefs.h:
-
-/usr/include/bits/wordsize.h:
 
 /usr/include/gnu/stubs.h:
 
@@ -166,7 +140,7 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
 
 /usr/include/stdio.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stddef.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stddef.h:
 
 /usr/include/bits/types.h:
 
@@ -178,7 +152,7 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
 
 /usr/include/wchar.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdarg.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdarg.h:
 
 /usr/include/bits/sys_errlist.h:
 
@@ -197,6 +171,8 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
 /usr/include/bits/endian.h:
 
 /usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
 
 /usr/include/stdlib.h:
 
@@ -234,6 +210,8 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
 
 /usr/include/alloca.h:
 
+/usr/include/bits/stdlib-float.h:
+
 /usr/include/unistd.h:
 
 /usr/include/bits/posix_opt.h:
@@ -246,11 +224,11 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
 
 /usr/include/assert.h:
 
-/usr/local/include/python3.6m/pyport.h:
+/usr/include/python2.7/pyport.h:
 
 /usr/include/inttypes.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/stdint.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -282,159 +260,141 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
 
 /usr/include/bits/stat.h:
 
-/usr/local/include/python3.6m/pymacro.h:
+/usr/include/python2.7/pymath.h:
 
-/usr/local/include/python3.6m/pyatomic.h:
+/usr/include/python2.7/pymem.h:
 
-/usr/local/include/python3.6m/pymath.h:
+/usr/include/python2.7/object.h:
 
-/usr/local/include/python3.6m/pytime.h:
+/usr/include/python2.7/objimpl.h:
 
-/usr/local/include/python3.6m/object.h:
+/usr/include/python2.7/pydebug.h:
 
-/usr/local/include/python3.6m/pymem.h:
-
-/usr/local/include/python3.6m/objimpl.h:
-
-/usr/local/include/python3.6m/typeslots.h:
-
-/usr/local/include/python3.6m/pyhash.h:
-
-/usr/local/include/python3.6m/pydebug.h:
-
-/usr/local/include/python3.6m/bytearrayobject.h:
-
-/usr/local/include/python3.6m/bytesobject.h:
-
-/usr/local/include/python3.6m/unicodeobject.h:
+/usr/include/python2.7/unicodeobject.h:
 
 /usr/include/ctype.h:
 
-/usr/local/include/python3.6m/longobject.h:
+/usr/include/python2.7/intobject.h:
 
-/usr/local/include/python3.6m/longintrepr.h:
+/usr/include/python2.7/boolobject.h:
 
-/usr/local/include/python3.6m/boolobject.h:
+/usr/include/python2.7/longobject.h:
 
-/usr/local/include/python3.6m/floatobject.h:
+/usr/include/python2.7/floatobject.h:
 
-/usr/local/include/python3.6m/complexobject.h:
+/usr/include/python2.7/complexobject.h:
 
-/usr/local/include/python3.6m/rangeobject.h:
+/usr/include/python2.7/rangeobject.h:
 
-/usr/local/include/python3.6m/memoryobject.h:
+/usr/include/python2.7/stringobject.h:
 
-/usr/local/include/python3.6m/tupleobject.h:
+/usr/include/python2.7/memoryobject.h:
 
-/usr/local/include/python3.6m/listobject.h:
+/usr/include/python2.7/bufferobject.h:
 
-/usr/local/include/python3.6m/dictobject.h:
+/usr/include/python2.7/bytesobject.h:
 
-/usr/local/include/python3.6m/odictobject.h:
+/usr/include/python2.7/bytearrayobject.h:
 
-/usr/local/include/python3.6m/enumobject.h:
+/usr/include/python2.7/tupleobject.h:
 
-/usr/local/include/python3.6m/setobject.h:
+/usr/include/python2.7/listobject.h:
 
-/usr/local/include/python3.6m/methodobject.h:
+/usr/include/python2.7/dictobject.h:
 
-/usr/local/include/python3.6m/moduleobject.h:
+/usr/include/python2.7/enumobject.h:
 
-/usr/local/include/python3.6m/funcobject.h:
+/usr/include/python2.7/setobject.h:
 
-/usr/local/include/python3.6m/classobject.h:
+/usr/include/python2.7/methodobject.h:
 
-/usr/local/include/python3.6m/fileobject.h:
+/usr/include/python2.7/moduleobject.h:
 
-/usr/local/include/python3.6m/pycapsule.h:
+/usr/include/python2.7/funcobject.h:
 
-/usr/local/include/python3.6m/traceback.h:
+/usr/include/python2.7/classobject.h:
 
-/usr/local/include/python3.6m/pystate.h:
+/usr/include/python2.7/fileobject.h:
 
-/usr/local/include/python3.6m/sliceobject.h:
+/usr/include/python2.7/cobject.h:
 
-/usr/local/include/python3.6m/cellobject.h:
+/usr/include/python2.7/pycapsule.h:
 
-/usr/local/include/python3.6m/iterobject.h:
+/usr/include/python2.7/traceback.h:
 
-/usr/local/include/python3.6m/genobject.h:
+/usr/include/python2.7/sliceobject.h:
 
-/usr/local/include/python3.6m/descrobject.h:
+/usr/include/python2.7/cellobject.h:
 
-/usr/local/include/python3.6m/warnings.h:
+/usr/include/python2.7/iterobject.h:
 
-/usr/local/include/python3.6m/weakrefobject.h:
+/usr/include/python2.7/genobject.h:
 
-/usr/local/include/python3.6m/structseq.h:
+/usr/include/python2.7/descrobject.h:
 
-/usr/local/include/python3.6m/namespaceobject.h:
+/usr/include/python2.7/warnings.h:
 
-/usr/local/include/python3.6m/codecs.h:
+/usr/include/python2.7/weakrefobject.h:
 
-/usr/local/include/python3.6m/pyerrors.h:
+/usr/include/python2.7/codecs.h:
 
-/usr/local/include/python3.6m/pyarena.h:
+/usr/include/python2.7/pyerrors.h:
 
-/usr/local/include/python3.6m/modsupport.h:
+/usr/include/python2.7/pystate.h:
 
-/usr/local/include/python3.6m/pythonrun.h:
+/usr/include/python2.7/pyarena.h:
 
-/usr/local/include/python3.6m/pylifecycle.h:
+/usr/include/python2.7/modsupport.h:
 
-/usr/local/include/python3.6m/ceval.h:
+/usr/include/python2.7/pythonrun.h:
 
-/usr/local/include/python3.6m/sysmodule.h:
+/usr/include/python2.7/ceval.h:
 
-/usr/local/include/python3.6m/osmodule.h:
+/usr/include/python2.7/sysmodule.h:
 
-/usr/local/include/python3.6m/intrcheck.h:
+/usr/include/python2.7/intrcheck.h:
 
-/usr/local/include/python3.6m/import.h:
+/usr/include/python2.7/import.h:
 
-/usr/local/include/python3.6m/abstract.h:
+/usr/include/python2.7/abstract.h:
 
-/usr/local/include/python3.6m/bltinmodule.h:
+/usr/include/python2.7/compile.h:
 
-/usr/local/include/python3.6m/compile.h:
+/usr/include/python2.7/code.h:
 
-/usr/local/include/python3.6m/code.h:
+/usr/include/python2.7/eval.h:
 
-/usr/local/include/python3.6m/eval.h:
+/usr/include/python2.7/pyctype.h:
 
-/usr/local/include/python3.6m/pyctype.h:
+/usr/include/python2.7/pystrtod.h:
 
-/usr/local/include/python3.6m/pystrtod.h:
+/usr/include/python2.7/pystrcmp.h:
 
-/usr/local/include/python3.6m/pystrcmp.h:
+/usr/include/python2.7/dtoa.h:
 
-/usr/local/include/python3.6m/dtoa.h:
-
-/usr/local/include/python3.6m/fileutils.h:
-
-/usr/local/include/python3.6m/pyfpe.h:
+/usr/include/python2.7/pyfpe.h:
 
 ../../include/pocketsphinx.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmd_ln.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/sphinxbase_export.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/prim_type.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinx_config.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/logmath.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fe.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fe.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fixpoint.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/feat.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/feat.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmn.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/cmn.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/agc.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/agc.h:
 
 ../../include/pocketsphinx_export.h:
 
@@ -442,28 +402,28 @@ pocketsphinx_wrap.lo: pocketsphinx_wrap.c \
 
 ../../include/ps_lattice.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ngram_model.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ngram_model.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/mmio.h:
 
 ../../include/ps_mllr.h:
 
 ../../include/ps_search.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fsg_model.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/fsg_model.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/glist.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/bitvec.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/ckd_alloc.h:
 
 /usr/include/setjmp.h:
 
 /usr/include/bits/setjmp.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/hash_table.h:
 
-/home/fanfanda/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h:
+/root/tailbench-v0.9/sphinx/pocketsphinx-5prealpha/../sphinxbase-5prealpha/include/sphinxbase/listelem_alloc.h:
 
-/opt/rh/devtoolset-2/root/usr/lib/gcc/x86_64-redhat-linux/4.8.2/include/float.h:
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include/float.h:

@@ -1,13 +1,19 @@
+BASE_ROOT=/root/
+TAIL_ROOT=${BASE_ROOT}/tailbench-v0.9/
+
+RESULT_ROOT=${BASE_ROOT}/result/
+
 # Set this to point to the top level of the TailBench data directory
-DATA_ROOT=/home/xingw/Mixed_Bench/Server/tailbench-data/
+DATA_ROOT=${BASE_ROOT}/tailbench-data/
 # Set this to point to the top level installation directory of the Java
 # Development Kit. Only needed for Specjbb
- JDK_PATH=/usr/lib/jvm/java-8-openjdk-amd64/
+JDK_PATH=/opt/jdk
 
 # This location is used by applications to store scratch data during execution.
-SCRATCH_DIR=/home/xingw/Mixed_Bench/tailbench-scratchData
+SCRATCH_DIR=${BASE_ROOT}/tailbench-scratchData
 
-export CLIENT_DIR=$DIR
-export RESULT_DIR=/home/xingw/Mixed_Bench/Client/result/${dir}/
-export TAIL_DIR=/home/xingw/Mixed_Bench/Server/tailbench-v0.9
-export DWARF_DIR=/home/xingw/Mixed_Bench/Server/dwarf-set
+
+REDIS_IP="172.17.0.1"
+REDIS_PORT=6379
+REDIS_AUTH="xingwxingw"
+RESULT_DIR=/root/result
