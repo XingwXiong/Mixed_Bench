@@ -42,7 +42,5 @@ echo 'wait-----------------------------ttttttttttttttttttttttttttttttttttttttt'
 echo 'ok-----------------------------------next'
 # Teardown
 #./kill_networked.sh
-#rm libtbench_jni.so
-#rm gc.log
-#rm -r results
+#rm -rf libtbench_jni.so gc.log results
 

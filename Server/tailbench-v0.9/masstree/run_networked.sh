@@ -21,5 +21,5 @@ echo $! > client.pid
 
 wait $(cat client.pid)
 
-pkill -f masstree
+pkill -f mttest_server_networked mttest_client_networked
 rm -f *.pid

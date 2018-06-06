@@ -1,9 +1,7 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source ${DIR}/../configs.sh
-QPS=100
-WARMUPREQS=1000
-REQUESTS=3000
+QPS=50
 
 if [[ -z "${NTHREADS}" ]]; then NTHREADS=1; fi
 if [[ -z "${SERVER_IP}" ]]; then SERVER_IP=127.0.0.1; fi 

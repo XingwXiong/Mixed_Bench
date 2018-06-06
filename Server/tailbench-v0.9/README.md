@@ -11,7 +11,8 @@ subdirectory:
 	- git clone https://github.com/gperftools/gperftools
 	- make && make install
  - moses        : Statistical machine translation
-	- yum install -y bison swig boost-devel 
+	- yum install -y bison swig boost-devel
+	- tcmalloc 
  - shore        : OLTP database (optimized for disk/ssd)
 	- yum install -y readline-devel libgtop2-devel  
  - silo         : OLTP database (in-memory)

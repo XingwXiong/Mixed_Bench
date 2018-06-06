@@ -6,7 +6,7 @@ source ${DIR}/../configs.sh
 if [[ -z "${NTHREADS}" ]]; then NTHREADS=1; fi
 if [[ -z "${SERVER_IP}" ]]; then SERVER_IP=127.0.0.1; fi
 
-REQS=1000000
+QPS=100
 
 # Setup
 #TMP=$(mktemp -d --tmpdir=${SCRATCH_DIR})
@@ -33,7 +33,7 @@ TBENCH_SERVER=${SERVER_IP} \
 TBENCH_SERVER_PORT=10003 \
 TBENCH_RANDSEED=${RANDOM} \
 TBENCH_QPS=${QPS} TBENCH_MINSLEEPNS=100000 \
-     shore-kits/shore_kits_client_networked -i cmdfile &
+${TAIL_ROOT}/shore/shore-kits/shore_kits_client_networked -i cmdfile &
 echo $! > client.pid
 
 wait $(cat client.pid)

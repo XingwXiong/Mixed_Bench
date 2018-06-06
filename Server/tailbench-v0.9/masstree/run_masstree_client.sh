@@ -18,5 +18,4 @@ echo $! > client.pid
 
 wait $(cat client.pid)
 
-pkill -f masstree
 rm -f *.pid

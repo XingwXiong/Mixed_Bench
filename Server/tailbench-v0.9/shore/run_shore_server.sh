@@ -6,9 +6,10 @@ source ${DIR}/../configs.sh
 THREADS=1
 REQS=1000000
 WARMUP=10
-MAXREQS=100
+MAXREQS=200
 
 kill -9 $(cat server.pid)
+pkill -f shore_kits_server_networked 
 rm -f log scratch cmdfile db-tpcc-1 diskrw shore.conf info server.pid client.pid
 
 # Setup
@@ -34,10 +35,10 @@ sed -i -e "s#@NTHREADS#$THREADS#g" shore.conf
 
 TBENCH_SERVER_PORT=10003 \
 TBENCH_MAXREQS=${MAXREQS} TBENCH_WARMUPREQS=${WARMUP} \
-shore-kits/shore_kits_server_networked -i cmdfile &
+${TAIL_ROOT}/shore/shore-kits/shore_kits_server_networked -i cmdfile &
 echo $! > server.pid
 
-sleep 5
+sleep 1
 
 while [ 1 ]
 do
