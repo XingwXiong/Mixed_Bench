@@ -1,5 +1,7 @@
 #!/bin/bash
 
+if [[ -z "${DWARF_DIR}" ]]; then DWARF_DIR=/root/dwarf-set; fi
+
 graph500=${DWARF_DIR}/bfs-openmp/src/omp/bfs-openmp/graph500-2.1.4
 
 run_one() {
