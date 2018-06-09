@@ -1,0 +1,10 @@
+multi-thread_cnt: 3
+remove wordcount temp dir and then recreate it.
+process file.
+time: 3
+clock: 2.510000
+clock_single_read: 0.490000
+clock_single_write: 0.360000
+clock: parallel part:  total of threads:0.640000  wall time:0.635034
+clock_single_merge: 0.910000
+wordcount finish

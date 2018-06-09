@@ -39,11 +39,11 @@ mttest.o: mttest.cc /usr/include/stdc-predef.h config.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/sys/epoll.h /usr/include/bits/epoll.h \
- /usr/include/asm-generic/mman.h /usr/include/asm-generic/mman-common.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h \
- /usr/include/bits/fcntl-linux.h /usr/include/assert.h \
- /usr/include/string.h /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/numa.h /usr/include/string.h /usr/include/sys/epoll.h \
+ /usr/include/bits/epoll.h /usr/include/asm-generic/mman.h \
+ /usr/include/asm-generic/mman-common.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/assert.h /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/bits/sched.h /usr/include/bits/timex.h \
  /usr/include/bits/setjmp.h /usr/include/math.h \
  /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
@@ -324,6 +324,10 @@ config.h:
 
 /usr/include/bits/xopen_lim.h:
 
+/usr/include/numa.h:
+
+/usr/include/string.h:
+
 /usr/include/sys/epoll.h:
 
 /usr/include/bits/epoll.h:
@@ -339,8 +343,6 @@ config.h:
 /usr/include/bits/fcntl-linux.h:
 
 /usr/include/assert.h:
-
-/usr/include/string.h:
 
 /usr/include/pthread.h:
 

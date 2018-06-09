@@ -12,10 +12,11 @@ COPY authorized_keys /root/.ssh/authorized_keys
 
 COPY system_tz.py /root/
 
-RUN yum install -y  epel-release python gcc gcc-c++ automake autoconf libtool make zlib-devel libuuid-devel e2fsprogs-devel \
+RUN yum -y update \
+    && yum install -y epel-release python gcc gcc-c++ automake autoconf libtool make zlib-devel libuuid-devel e2fsprogs-devel \
                     redis openssl-devel openssh-server passwd python-devel net-tools opencv opencv-devel \ 
-                    bison swig boost-devel readline-devel libgtop2-devel jemalloc-devel libdb-cxx-devel numactl-devel libaio-devel git wget \ 
-    && yum install -y python-pip \
+                    bison swig boost-devel readline-devel libdb-cxx-devel numactl-devel libaio-devel git wget \ 
+    && yum install -y python-pip  libgtop2-devel jemalloc-devel bc expect \
     && yum clean all \
     && pip install --upgrade pip \
     && pip install redis psutil numpy scipy \
@@ -33,6 +34,7 @@ RUN yum install -y  epel-release python gcc gcc-c++ automake autoconf libtool ma
     && echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib" >> /root/.bashrc \
     && echo "export JAVA_HOME=/opt/jdk" >> /root/.bashrc \
     && echo "export JRE_HOME=$JAVA_HOME/jre" >> /root/.bashrc \
+    && echo "export ANT_HOME=/opt/ant" >> /root/.bashrc \
     && echo "export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib" >> /root/.bashrc \
     && echo "export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:/usr/local/bin/:$PATH" >> /root/.bashrc \
     && source /root/.bashrc

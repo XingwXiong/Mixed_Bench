@@ -6,6 +6,7 @@
     -v /home/xingw/Mixed_Bench/Server/tailbench-scratchData:/root/tailbench-scratchData \
     -v /home/xingw/Mixed_Bench/Client/result:/root/result \
     -v /home/xingw/Mixed_Bench/Server/dwarf-set:/root/dwarf-set \
+    -v /home/xingw/Mixed_Bench/Client/start.sh:/root/start.sh \
     --publish-all=true \
     xingw/centos:latest
     #| xargs -it docker exec {} ifconfig

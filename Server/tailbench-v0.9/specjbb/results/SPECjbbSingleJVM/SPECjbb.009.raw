@@ -29,7 +29,7 @@ config.sw.otherAvailable=Feb-2000
 config.sw.tuning=Operating system tunings<UL><LI>bufcache=1024</LI><LI>maxthreads_per_user=65536</LI></UL>
 config.sw.vendor=Phobos Ltd
 config.sw.vendor.url=http://www.phobos.uk.co
-config.test.date=Jun 2, 2018
+config.test.date=Jun 9, 2018
 config.test.internalReference=http://pluto.eng/specpubs/mar2000/
 config.test.location=Santa Monica, CA
 config.test.specLicense=50

@@ -16,4 +16,4 @@ SCRATCH_DIR=${BASE_ROOT}/tailbench-scratchData
 REDIS_IP="172.17.0.1"
 REDIS_PORT=6379
 REDIS_AUTH="xingwxingw"
-RESULT_DIR=/root/result
+if [[ -z "${RESULT_DIR}" ]]; then RESULT_DIR=/root/result/; fi

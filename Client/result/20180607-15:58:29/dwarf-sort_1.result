@@ -1,0 +1,10 @@
+multi-thread_cnt: 3
+remove sort temp dir and then recreate it.
+process file.
+time: 2
+clock: 2.660000
+clock_single_read: 0.350000
+clock_single_write: 0.230000
+clock: parallel part:  total of threads:1.390000  wall time:0.711991
+clock_single_merge: 0.630000
+sort finish

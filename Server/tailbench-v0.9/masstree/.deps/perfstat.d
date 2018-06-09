@@ -143,7 +143,8 @@ perfstat.o: perfstat.cc /usr/include/stdc-predef.h config.h perfstat.hh \
  /usr/include/c++/4.8.2/functional /usr/include/c++/4.8.2/typeinfo \
  /usr/include/c++/4.8.2/tuple /usr/include/c++/4.8.2/array \
  /usr/include/c++/4.8.2/stdexcept \
- /usr/include/c++/4.8.2/bits/uses_allocator.h kvdconfig.hh kvstats.hh
+ /usr/include/c++/4.8.2/bits/uses_allocator.h kvdconfig.hh kvstats.hh \
+ /usr/include/numa.h
 
 /usr/include/stdc-predef.h:
 
@@ -582,3 +583,5 @@ hashcode.hh:
 kvdconfig.hh:
 
 kvstats.hh:
+
+/usr/include/numa.h:

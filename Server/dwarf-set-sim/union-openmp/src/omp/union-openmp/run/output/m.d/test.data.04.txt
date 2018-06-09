@@ -1,9 +1,0 @@
-总用量 12
--rw-rw-r-- 1 alanubu 72 8月 28 15 : 40 test . data 01 txt --rw-rw-r-- sdla
--rw-rw-r-- 1 alanubu 88 8月 30 21 : 36 test . data 02 txt -r-w-rw-r--
--rw-rw-r-- 1 alanubu 136 9月 10 : 57 test . data 03 txt -rw--r sdlaw-r--
--rw-rw-r-- 1 alanubu 0 9月 10 : 57 test . data 04 txt -rw--rw-r--
--rw-rw-r-- 1 alanubu 0 9月 10 : 56 test . data 05 txt -rw-r-w-r-- sdla
--rw-rw-r-- 1 alanubu 0 9月 10 : 56 test . data 06 txt -rw-rw--r-- al sdlaanubu
--rw-rw-r-- 1 alanubu 0 9月 10 : 56 test . data 07 txt -rw-rw--r-- sdla
--rw-rw-r-- 1 alanubu 0 9月 10 : 56 test . data 08 txt -rw-rw-r--- a la sdlanubu

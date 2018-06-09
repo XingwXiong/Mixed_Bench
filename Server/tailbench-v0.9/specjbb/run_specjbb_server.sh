@@ -15,7 +15,7 @@ export CLASSPATH=./build/dist/jbb.jar:./build/dist/check.jar:${TBENCH_PATH}/tben
 
 export PATH=${JDK_PATH}/bin:${PATH}
 
-REQUESTS=25000
+REQUESTS=30000
 WARMUPREQS=5000 
 
 if [[ -d libtbench_jni.so ]] 
@@ -32,12 +32,11 @@ sleep 1
 
 TBENCH_SERVER_PORT=10006 \
 TBENCH_RANDSEED=${RANDOM} TBENCH_MAXREQS=${REQUESTS} TBENCH_WARMUPREQS=${WARMUPREQS} \
-${JDK_PATH}/bin/java -Djava.library.path=. -XX:ParallelGCThreads=1 \
+nohup ${JDK_PATH}/bin/java -Djava.library.path=. -XX:ParallelGCThreads=1 \
     -XX:+UseSerialGC -XX:NewRatio=1 -XX:NewSize=7000m -Xloggc:gc.log \
-    -Xms10000m -Xmx10000m -Xrs spec.jbb.JBBmain -propfile SPECjbb_mt.props &
+    -Xms10000m -Xmx10000m -Xrs spec.jbb.JBBmain -propfile SPECjbb_mt.props >server.log 2>&1 &
 
 echo $! > server.pid
-
 #wait $(cat server.pid)
 
 while [ 1 ]

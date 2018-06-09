@@ -1,0 +1,3 @@
+compute application throughput_rate:.42857
+xapian
+--------------------------

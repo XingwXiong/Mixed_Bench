@@ -46,6 +46,9 @@ def get_sys_dynamic_info(ip_addr):
 def get_app_static_info(ip_addr, app_name):
     pass
 
-def get_app_dynamic_info(ip_addr, app_name):
+#"xapian" "img-dnn" "masstree" "shore" "sphinx" "silo" "specjbb" "moses"
+def get_app_dynamic_info(ip_addr, app_name, size):
+    key = "%s_%s_latency" % (ip_addr, app_name)
+    
     pass
 

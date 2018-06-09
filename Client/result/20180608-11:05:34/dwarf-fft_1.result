@@ -1,0 +1,10 @@
+argc: 3
+argv: /root/dwarf-set/fft-openmp/src/omp/fft-openmp/run/single_thread /root/dwarf-set/fft-openmp/src/omp/fft-openmp/dataset/data /root/dwarf-set/fft-openmp/src/omp/fft-openmp/run/output/s.0 
+single-thread: thread_cnt: 1
+process file.
+fftw threads: 1
+time: 13
+clock: 6.550000
+clock_single_read: 5.770000
+clock_single_write: 0.190000
+clock: parallel part:  total of threads:0.580000  wall time:0.582458

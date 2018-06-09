@@ -2,6 +2,8 @@
 
 source configs.sh
 
+if [[ -z "${SERVER_IP}" ]]; then SERVER_IP=127.0.0.1; fi
+
 cd ${TAIL_ROOT}/xapian/ && ${TAIL_ROOT}/xapian/run_xapian_client.sh &
 
 cd ${TAIL_ROOT}/img-dnn && ${TAIL_ROOT}/img-dnn/run_img-dnn_client.sh &

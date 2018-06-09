@@ -1,0 +1,19 @@
+compute application throughput_rate:.50000
+xapian
+--------------------------
+user_p_num 0th latency 0.501 ms | max latency 99.010 ms
+user_p_num 90th latency 13.809 ms | max latency 99.010 ms
+user_p_num 90th latency 13.809 ms | max latency 99.010 ms
+user_p_num 95th latency 17.558 ms | max latency 99.010 ms
+user_p_num 100th latency 99.010 ms | max latency 99.010 ms
+
+img-dnn
+--------------------------
+user_p_num 0th latency 1.147 ms | max latency 5.291 ms
+user_p_num 90th latency 1.720 ms | max latency 5.291 ms
+user_p_num 90th latency 1.720 ms | max latency 5.291 ms
+user_p_num 95th latency 2.084 ms | max latency 5.291 ms
+user_p_num 100th latency 5.291 ms | max latency 5.291 ms
+
+masstree
+--------------------------

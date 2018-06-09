@@ -16,7 +16,7 @@ endif
 ifneq ($(strip $(NOSUPERPAGE)), )
   CFLAGS += -DNOSUPERPAGE
 endif
-LIBS =  -lpthread -lm
+LIBS = -lnuma  -lpthread -lm
 LDFLAGS = 
 
 all: test_atomics mtd mtclient mttest

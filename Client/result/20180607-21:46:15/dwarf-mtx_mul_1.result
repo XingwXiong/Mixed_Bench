@@ -1,0 +1,10 @@
+argc: 4
+argv: /root/dwarf-set/mtx_mul/src/omp/mtx_mul/run/single_thread /root/dwarf-set/mtx_mul/src/omp/mtx_mul/dataset/part-00000 /root/dwarf-set/mtx_mul/src/omp/mtx_mul/dataset/part-00000 /root/dwarf-set/mtx_mul/src/omp/mtx_mul/run/output/part-00000.out.s.mtx 
+single-thread: thread_cnt: 1
+process file.
+time: 6
+clock: 4.540000
+clock_single_read: 0.050000
+clock_single_write: 0.750000
+clock: parallel part:  total of threads:3.730000  wall time:5.078448
+matrixMult finish

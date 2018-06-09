@@ -1,0 +1,10 @@
+multi-thread_cnt: 3
+make sort temp dir.
+process file.
+time: 6
+clock: 4.190000
+clock_single_read: 0.820000
+clock_single_write: 0.240000
+clock: parallel part:  total of threads:2.440000  wall time:1.669501
+clock_single_merge: 0.620000
+sort finish

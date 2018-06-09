@@ -1,0 +1,43 @@
+compute application throughput_rate:.25000
+xapian
+--------------------------
+user_p_num 0th latency 0.707 ms | max latency 2128.931 ms
+user_p_num 90th latency 1483.118 ms | max latency 2128.931 ms
+user_p_num 90th latency 1483.118 ms | max latency 2128.931 ms
+user_p_num 95th latency 1842.507 ms | max latency 2128.931 ms
+user_p_num 100th latency 2128.931 ms | max latency 2128.931 ms
+
+img-dnn
+--------------------------
+user_p_num 0th latency 1.308 ms | max latency 7.844 ms
+user_p_num 90th latency 2.628 ms | max latency 7.844 ms
+user_p_num 90th latency 2.628 ms | max latency 7.844 ms
+user_p_num 95th latency 3.037 ms | max latency 7.844 ms
+user_p_num 100th latency 7.844 ms | max latency 7.844 ms
+
+masstree
+--------------------------
+user_p_num 0th latency 0.438 ms | max latency 2.662 ms
+user_p_num 90th latency 0.877 ms | max latency 2.662 ms
+user_p_num 90th latency 0.877 ms | max latency 2.662 ms
+user_p_num 95th latency 0.921 ms | max latency 2.662 ms
+user_p_num 100th latency 2.662 ms | max latency 2.662 ms
+
+shore
+--------------------------
+user_p_num 0th latency 14380.294 ms | max latency 120028.978 ms
+user_p_num 90th latency 104659.339 ms | max latency 120028.978 ms
+user_p_num 90th latency 104659.339 ms | max latency 120028.978 ms
+user_p_num 95th latency 111578.075 ms | max latency 120028.978 ms
+user_p_num 100th latency 120028.978 ms | max latency 120028.978 ms
+
+sphinx
+--------------------------
+user_p_num 0th latency 15726.251 ms | max latency 103832.606 ms
+user_p_num 90th latency 96400.403 ms | max latency 103832.606 ms
+user_p_num 90th latency 96400.403 ms | max latency 103832.606 ms
+user_p_num 95th latency 100030.041 ms | max latency 103832.606 ms
+user_p_num 100th latency 103832.606 ms | max latency 103832.606 ms
+
+silo
+--------------------------

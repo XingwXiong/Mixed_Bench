@@ -1,8 +1,0 @@
-test . data 01 txt a
-test . data 02 txt a
-test . data 03 txt a
-test . data 04 txt a
-test . data 05 txt a
-test . data 06 txt a
-test . data 07 txt a
-test . data 08 txt a

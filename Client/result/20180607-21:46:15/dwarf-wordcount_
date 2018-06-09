@@ -1,0 +1,10 @@
+multi-thread_cnt: 3
+make wordcount temp dir.
+process file.
+time: 7
+clock: 3.350000
+clock_single_read: 0.960000
+clock_single_write: 0.380000
+clock: parallel part:  total of threads:1.050000  wall time:1.092916
+clock_single_merge: 0.840000
+wordcount finish

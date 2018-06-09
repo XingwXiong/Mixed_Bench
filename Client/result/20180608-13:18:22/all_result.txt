@@ -1,0 +1,22 @@
+compute application throughput_rate:.50000
+xapian
+--------------------------
+user_p_num 0th latency 0.446 ms | max latency 5.345 ms
+user_p_num 90th latency 2.923 ms | max latency 5.345 ms
+user_p_num 90th latency 2.923 ms | max latency 5.345 ms
+user_p_num 95th latency 3.381 ms | max latency 5.345 ms
+user_p_num 100th latency 5.345 ms | max latency 5.345 ms
+
+img-dnn
+--------------------------
+user_p_num 0th latency 1.127 ms | max latency 4.236 ms
+user_p_num 90th latency 1.734 ms | max latency 4.236 ms
+user_p_num 90th latency 1.734 ms | max latency 4.236 ms
+user_p_num 95th latency 2.069 ms | max latency 4.236 ms
+user_p_num 100th latency 4.236 ms | max latency 4.236 ms
+
+sort
+--------------------------
+time: 2
+clock: parallel part:  total of threads:1.380000  wall time:0.633299
+

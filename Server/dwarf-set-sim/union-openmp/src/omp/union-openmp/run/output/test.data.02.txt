@@ -1,5 +1,0 @@
-02 : this is line 1 ; a
-02 : and line 2 ; b
-02 : before an empty line ; c
-
-02 : after an empty line ; d

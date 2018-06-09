@@ -63,6 +63,8 @@ Client::Client(int _nthreads) {
     redis_port = getOpt<int>("REDIS_PORT", 6379);
     redis_auth = getOpt<std::string>("REDIS_AUTH", "xingwxingw");
     redis_ctx = redisConnect(redis_ip.c_str(), redis_port); 
+    redis_key = server_ip + "_" + app_name + "_latency";
+
     if (redis_ctx == NULL || redis_ctx->err) {
         if (redis_ctx) {
             fprintf(stderr, "Error: %s\n", redis_ctx->errstr);
@@ -78,7 +80,12 @@ Client::Client(int _nthreads) {
         if(redis_reply->type == REDIS_REPLY_ERROR) {
             fprintf(stderr, "Error: Redis Authentication failure\n");
             freeReplyObject(redis_reply);
-        } else fprintf(stdout, "Authentication success!\n");
+        } else {
+            fprintf(stdout, "Authentication success!\n");
+            freeReplyObject(redis_reply);
+            redis_reply = (redisReply* ) redisCommand(redis_ctx, "del %s", redis_key.c_str());
+            freeReplyObject(redis_reply);
+        }
     }
     tBenchClientInit();
 }
@@ -147,8 +154,7 @@ void Client::finiReq(Response* resp) {
         sjrnTimes.push_back(sjrn);
         //std::cout << queueTimes.size() << std::endl;
         if(redis_ctx != NULL) {
-            redis_key = server_ip + "_" + app_name + "_latency";
-            sprintf(val_buf, "(%d,%d,%d)", qtime, resp->svcNs, sjrn);
+            sprintf(val_buf, "(%llu,%llu,%llu, %llu)", qtime, resp->svcNs, sjrn, curNs);
             //printf("%s\n", val_buf);
             redis_reply = (redisReply* ) redisCommand(redis_ctx, "lpush %s %s", redis_key.c_str(), val_buf);
             freeReplyObject(redis_reply);

@@ -1,0 +1,9 @@
+compute application throughput_rate:.66666
+xapian
+--------------------------
+
+img-dnn
+--------------------------
+
+sort
+--------------------------

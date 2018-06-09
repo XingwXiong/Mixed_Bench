@@ -1,0 +1,34 @@
+xapian
+--------------------------
+user_p_num 0th latency 0.496 ms | max latency 5.930 ms
+user_p_num 90th latency 2.880 ms | max latency 5.930 ms
+user_p_num 90th latency 2.880 ms | max latency 5.930 ms
+user_p_num 95th latency 3.359 ms | max latency 5.930 ms
+user_p_num 100th latency 5.930 ms | max latency 5.930 ms
+
+img-dnn
+--------------------------
+user_p_num 0th latency 1.137 ms | max latency 3.749 ms
+user_p_num 90th latency 1.725 ms | max latency 3.749 ms
+user_p_num 90th latency 1.725 ms | max latency 3.749 ms
+user_p_num 95th latency 2.055 ms | max latency 3.749 ms
+user_p_num 100th latency 3.749 ms | max latency 3.749 ms
+
+masstree
+--------------------------
+user_p_num 0th latency 0.509 ms | max latency 0.899 ms
+user_p_num 90th latency 0.793 ms | max latency 0.899 ms
+user_p_num 90th latency 0.793 ms | max latency 0.899 ms
+user_p_num 95th latency 0.817 ms | max latency 0.899 ms
+user_p_num 100th latency 0.899 ms | max latency 0.899 ms
+
+shore
+--------------------------
+user_p_num 0th latency 481.266 ms | max latency 7016.460 ms
+user_p_num 90th latency 6296.939 ms | max latency 7016.460 ms
+user_p_num 90th latency 6296.939 ms | max latency 7016.460 ms
+user_p_num 95th latency 6707.046 ms | max latency 7016.460 ms
+user_p_num 100th latency 7016.460 ms | max latency 7016.460 ms
+
+sphinx
+--------------------------
