@@ -73,6 +73,7 @@ Client::Client(int _nthreads) {
             redisFree(redis_ctx);
             redis_ctx = NULL;
         }
+        exit(-1);
     } else {
         freeReplyObject(redis_reply);
         fprintf(stdout, "redis connection success!\n");
@@ -80,6 +81,7 @@ Client::Client(int _nthreads) {
         if(redis_reply->type == REDIS_REPLY_ERROR) {
             fprintf(stderr, "Error: Redis Authentication failure\n");
             freeReplyObject(redis_reply);
+            exit(-1);
         } else {
             fprintf(stdout, "Authentication success!\n");
             freeReplyObject(redis_reply);
@@ -87,6 +89,20 @@ Client::Client(int _nthreads) {
             freeReplyObject(redis_reply);
         }
     }
+
+    if(redis_ctx != NULL) {
+        char val_buf[1000];
+        std::string val = "";
+        sprintf(val_buf, "{"); val += std::string(val_buf);
+        sprintf(val_buf, "\'TBENCH_QPS\': \'%s\',", getOpt<std::string>("TBENCH_QPS", "-").c_str()); val += std::string(val_buf);
+        sprintf(val_buf, "\'TBENCH_WARMUPREQS\': \'%s\',", getOpt<std::string>("TBENCH_WARMUPREQS", "-").c_str()); val += std::string(val_buf);
+        sprintf(val_buf, "\'TBENCH_MAXREQS\': \'%s\',", getOpt<std::string>("TBENCH_MAXREQS", "-").c_str()); val += std::string(val_buf);
+        sprintf(val_buf, "}"); val += std::string(val_buf);
+        std::string redis_config_key = server_ip + "_" + app_name + "_config";
+        redis_reply = (redisReply* ) redisCommand(redis_ctx, "set %s %s", redis_config_key.c_str(), val.c_str());
+        freeReplyObject(redis_reply);
+    }
+    
     tBenchClientInit();
 }
 
@@ -280,6 +296,7 @@ bool NetworkedClient::recv(Response* resp) {
     int recvd = recvfull(serverFd, reinterpret_cast<char*>(resp), len, 0);
     if (recvd != len) {
         error = strerror(errno);
+        std::cout << app_name << std::endl;
         std::cout << "recvd:" << recvd << std::endl;
         std::cout << "len  :" << len << std::endl;
         std::cout<<"gougoug"<<std::endl;
